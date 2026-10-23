@@ -1,0 +1,82 @@
+[build]
+  command = "python3 scripts/events_component.py && python3 scripts/site_nav.py && python3 scripts/apply_turnstile_pages.py"
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "https://www.wolfeboroevents.com/*"
+  to = "https://wolfeboroevents.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/events/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/events"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/events-2/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/events-2"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/events-2/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/events-2"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/events/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/events"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/guide/*"
+  to = "/guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/guide"
+  to = "/guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro"
+  to = "/guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/"
+  to = "/guide/"
+  status = 301
+  force = true
