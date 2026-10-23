@@ -1,0 +1,19 @@
+[
+ {
+  "data": "data/events.json",
+  "template": "scripts/events_component_template.html",
+  "out": "index.html",
+  "region": "NH",
+  "title": "Wolfeboro and Lakes Region Events This Month",
+  "description": "What is on in Wolfeboro and the Lakes Region: farmers markets, concerts, holiday events, winter festivals and the big yearly events, updated monthly.",
+  "url": "https://wolfeboroevents.com/",
+  "not_posted_text": "Next year's date isn't out yet",
+  "domain": "wolfeboroevents.com",
+  "base_path": "/",
+  "town_label": "Wolfeboro",
+  "guide_url": "/guide/",
+  "timezone": "America/New_York",
+  "state": "NH",
+  "_comment": "Region settings for the shared events component (scripts/events_component.py, assets/events/). Everything else comes from the data file."
+ }
+]

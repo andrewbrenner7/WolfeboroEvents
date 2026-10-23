@@ -1,0 +1,18 @@
+{
+  "_comment": "Shared top nav across wolfeboroevents.com. Run python3 scripts/site_nav.py after events_component.py.",
+  "houses": [],
+  "links": [
+    {
+      "label": "Events",
+      "href": "/"
+    },
+    {
+      "label": "Town Guide",
+      "href": "/guide/"
+    }
+  ],
+  "pages": {
+    "index.html": "/",
+    "guide/index.html": "/guide/"
+  }
+}
