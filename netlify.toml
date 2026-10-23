@@ -80,3 +80,15 @@
   to = "/guide/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/wolfeboro/join/*"
+  to = "/join/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wolfeboro/join"
+  to = "/join/"
+  status = 301
+  force = true

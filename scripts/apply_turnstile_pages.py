@@ -11,7 +11,7 @@ def apply_turnstile(text):
     text = re.sub(r'[ \t]*<div class="cf-turnstile"[^>]*></div>\n?', "", text)
     return text
 
-for path in ["index.html", "guide/index.html"]:
+for path in ["index.html", "guide/index.html", "join/index.html"]:
     p = pathlib.Path(path)
     if p.exists():
         p.write_text(apply_turnstile(p.read_text(encoding="utf-8")), encoding="utf-8")

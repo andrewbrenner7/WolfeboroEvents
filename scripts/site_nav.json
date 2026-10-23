@@ -9,10 +9,15 @@
     {
       "label": "Town Guide",
       "href": "/guide/"
+    },
+    {
+      "label": "Join the list",
+      "href": "/join/"
     }
   ],
   "pages": {
     "index.html": "/",
-    "guide/index.html": "/guide/"
+    "guide/index.html": "/guide/",
+    "join/index.html": "/join/"
   }
 }

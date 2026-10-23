@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STEPBRGQH7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STEPBRGQH7', { linker: { domains: ['wolfeboroevents.com', 'wolfeborostays.com', 'wolfeborooaks.com'] } });
+  </script>
+  <title>Join the List · Wolfeboro Events</title>
+  <meta name="description" content="Get the Wolfeboro events email: once a season, what&#x27;s coming up around Wolfeboro and the Lakes Region, from summer concerts to winter weekends." />
+  <link rel="canonical" href="https://wolfeboroevents.com/join/" />
+  <meta property="og:title" content="Join the List · Wolfeboro Events" />
+  <meta property="og:description" content="Get the Wolfeboro events email: once a season, what&#x27;s coming up around Wolfeboro and the Lakes Region." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wolfeboroevents.com/join/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pine: #2f4a3c;
+      --pine-deep: #1f3429;
+      --lake: #4a7c8c;
+      --sand: #f4ece1;
+      --birch: #e8dfd0;
+      --ink: #1e2420;
+      --muted: #5c6b63;
+      --cream: #f6f1e8;
+      --white: #fff;
+      --shadow: 0 14px 40px rgba(31, 52, 41, 0.12);
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.65;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: var(--lake); }
+    .wrap { width: min(100% - 2rem, 1080px); margin-inline: auto; }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246, 241, 232, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(31, 52, 41, 0.08);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      gap: 1rem;
+    }
+    .brand {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--pine-deep);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .brand span { color: var(--lake); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.92rem;
+    }
+    .nav-links a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-links a:hover { color: var(--pine); }
+    .nav-links a[aria-current="page"] {
+      color: var(--pine-deep);
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
+    }
+    @media (max-width: 540px) {
+      .nav-links { gap: 0.85rem; font-size: 0.85rem; }
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, var(--sand) 0%, var(--birch) 100%);
+    }
+    .mail {
+      width: 100%;
+      padding: 3.5rem 0 4rem;
+    }
+    .mail-box {
+      max-width: 640px;
+      margin-inline: auto;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.4rem;
+      text-align: center;
+    }
+    @media (min-width: 640px) { .mail-box { padding: 2.25rem 2.25rem; } }
+    .mail-box h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      font-size: clamp(1.75rem, 3.8vw, 2.3rem);
+      margin: 0 0 0.5rem;
+      color: var(--pine-deep);
+    }
+    .mail-box p { color: var(--muted); margin: 0 0 1.25rem; }
+    #native-signup { text-align: left; }
+    #native-signup .signup-form { margin: 0; font: inherit; }
+    #native-signup label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 0.35rem;
+      color: var(--ink);
+    }
+    #native-signup input[type="email"] {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid rgba(31, 52, 41, 0.22);
+      border-radius: 10px;
+      font: inherit;
+      margin-bottom: 0.75rem;
+      background: #fff;
+    }
+    #native-signup input[type="email"]:focus {
+      outline: 2px solid rgba(74, 124, 140, 0.45);
+      border-color: var(--lake);
+    }
+    #native-signup .hp {
+      position: absolute;
+      left: -5000px;
+      height: 0;
+      overflow: hidden;
+    }
+    #native-signup .button {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.35rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      border: none;
+      cursor: pointer;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--pine) 0%, var(--pine-deep) 100%);
+      box-shadow: 0 10px 24px rgba(31, 52, 41, 0.22);
+      font-family: inherit;
+    }
+    #native-signup .button:hover { filter: brightness(1.05); }
+    #native-signup .button:disabled { opacity: 0.7; cursor: wait; }
+    .signup-status {
+      margin: 0.85rem 0 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--pine-deep);
+      text-align: center;
+    }
+    .signup-status.error { color: #a33; }
+    [hidden] { display: none !important; }
+    footer {
+      background: var(--pine-deep);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 2.25rem 0;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    footer a { color: #bcd4dc; }
+    footer p { margin: 0.35rem 0; }
+    footer span { display: block; margin-top: 0.75rem; opacity: 0.75; font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/">Wolfeboro <span>Events</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/">Events</a><a href="/guide/">Town Guide</a><a href="/join/" aria-current="page">Join the list</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="mail" id="mailing-list">
+      <div class="wrap">
+        <div class="mail-box">
+          <h1>Get the Wolfeboro events email</h1>
+          <p>Once a season, we round up what&#x27;s coming up around Wolfeboro and the Lakes Region, from summer concerts to winter weekends.</p>
+          <div id="native-signup">
+            <form id="signup-form" class="signup-form" novalidate>
+              <label for="signup-email">Email address</label>
+              <input type="email" name="email" id="signup-email" class="required email" placeholder="Email address" required autocomplete="email" />
+              <div class="hp" aria-hidden="true">
+                <label for="signup-website">Website</label>
+                <input type="text" name="website" id="signup-website" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="ts" value="" />
+              </div>
+              <input type="hidden" name="list" value="oaks" />
+              <input type="hidden" name="source_page" value="join" />
+              <input type="hidden" name="page" value="/join/" />
+              <div class="cf-turnstile" data-sitekey="__TURNSTILE_SITE_KEY__" data-size="flexible" data-theme="light" style="margin:10px 0;"></div>
+              <button type="submit" class="button" id="signup-submit">Sign me up</button>
+              <p class="signup-privacy" style="font-size:0.85rem;color:var(--muted);margin:10px 0 0;">Just four emails a year, plus the odd note about our houses. Unsubscribe whenever you like.</p>
+              <p id="signup-status" class="signup-status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+        </div>
+        <p class="closing" style="text-align:center;margin:1.25rem 0 0;">Thanks,<br>Andrew and Julie</p>
+      </div>
+    </section>
+  </main>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/assets/signup.js" defer></script>
+  <footer>
+    <p>Put together by Andrew and Julie at Wolfeboro Stays. See our Wolfeboro vacation rentals at <a href="https://wolfeborostays.com/">wolfeborostays.com</a>.</p>
+    <p>Questions or local tips? <a href="mailto:host@wolfeborostays.com?subject=Wolfeboro%20Events%20question">Email us</a></p>
+    <span>&copy; 2026 Wolfeboro Events · Wolfeboro, NH</span>
+  </footer>
+</body>
+</html>
