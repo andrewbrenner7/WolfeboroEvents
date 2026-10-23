@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STEPBRGQH7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-STEPBRGQH7', { linker: { domains: ['wolfeboroevents.com', 'wolfeborostays.com', 'wolfeborooaks.com'] } });
+  </script>
+  <title>Wolfeboro NH Local Guide: Beaches, Trails, Food and Winter | Wolfeboro Events</title>
+  <meta name="description" content="Our family-friendly guide to Wolfeboro, NH: the rail trail, town beaches, the Wright Museum, ice cream, rainy-day ideas and what&#x27;s open in winter." />
+  <link rel="canonical" href="https://wolfeboroevents.com/guide/" />
+  <meta property="og:title" content="Wolfeboro NH Local Guide: Beaches, Trails, Food and Winter" />
+  <meta property="og:description" content="Our family-friendly guide to Wolfeboro, NH: the rail trail, town beaches, the Wright Museum, ice cream, rainy-day ideas and what&#x27;s open in winter." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wolfeboroevents.com/guide/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pine: #2f4a3c;
+      --pine-deep: #1f3429;
+      --lake: #4a7c8c;
+      --lake-soft: #e7f1f4;
+      --ink: #1e2420;
+      --muted: #5c6b63;
+      --cream: #f6f1e8;
+      --white: #fff;
+      --shadow: 0 14px 40px rgba(31, 52, 41, 0.12);
+      --radius: 14px;
+      --max: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    img { max-width: 100%; display: block; height: auto; }
+    a { color: var(--lake); }
+    .wrap { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+
+    .nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(246, 241, 232, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(31, 52, 41, 0.08);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; padding: 0.9rem 0;
+    }
+    .brand {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.45rem; font-weight: 700;
+      color: var(--pine-deep); text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .brand span { color: var(--lake); }
+    .nav-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.8rem 1.35rem; border-radius: 999px;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none;
+      border: none; cursor: pointer;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--pine) 0%, var(--pine-deep) 100%);
+      color: var(--white);
+      box-shadow: 0 6px 18px rgba(47, 74, 60, 0.28);
+    }
+    .btn-secondary {
+      background: var(--white);
+      color: var(--pine-deep);
+      border: 1.5px solid rgba(47, 74, 60, 0.22);
+    }
+    .btn-ghost {
+      background: transparent; color: inherit; font-weight: 600; padding-inline: 0.7rem;
+    }
+    .btn-lg { padding: 1rem 1.7rem; font-size: 1.05rem; }
+
+    .hero {
+      position: relative; min-height: min(86vh, 700px);
+      display: grid; align-items: end; color: var(--white); overflow: hidden;
+    }
+    .hero-media, .hero-shade { position: absolute; inset: 0; }
+    .hero-media img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-shade {
+      background: linear-gradient(180deg, rgba(31,52,41,0.2) 0%, rgba(31,52,41,0.78) 100%);
+    }
+    .hero-content { position: relative; z-index: 1; padding: 4.5rem 0 3.2rem; max-width: 38rem; }
+    .eyebrow {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.09em;
+      text-transform: uppercase; opacity: 0.92; margin-bottom: 0.7rem;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.3rem, 5.5vw, 3.5rem); line-height: 1.1;
+      margin: 0 0 0.85rem; font-weight: 600;
+    }
+    .hero p { margin: 0 0 1.4rem; font-size: 1.1rem; opacity: 0.95; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; }
+    .hero-actions .btn-ghost { color: #fff; }
+
+    .facts {
+      display: flex; flex-wrap: wrap; gap: 0.45rem 1.2rem;
+      margin-top: 1.45rem; font-size: 0.92rem; opacity: 0.95;
+    }
+    .facts strong { font-weight: 700; }
+
+    section { padding: 4rem 0; }
+    .section-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      margin: 0 0 0.7rem; font-weight: 600;
+    }
+    .lede { color: var(--muted); font-size: 1.05rem; max-width: 42rem; margin: 0 0 1.8rem; }
+
+    .intro { background: var(--white); }
+    .intro-grid {
+      display: grid; gap: 2rem; grid-template-columns: 1.15fr 1fr; align-items: center;
+    }
+    @media (max-width: 820px) { .intro-grid { grid-template-columns: 1fr; }
+    }
+    .proof {
+      display: inline-flex; gap: 0.45rem; align-items: center;
+      background: var(--lake-soft); color: var(--pine-deep);
+      font-size: 0.86rem; font-weight: 700;
+      padding: 0.4rem 0.8rem; border-radius: 999px; margin-bottom: 1rem;
+    }
+    .intro-card { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .intro-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem;
+    }
+    @media (max-width: 820px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .gallery-grid { grid-template-columns: 1fr; } }
+    .gallery-grid figure {
+      margin: 0; border-radius: var(--radius); overflow: hidden;
+      background: #ddd; box-shadow: 0 4px 16px rgba(31,52,41,0.08);
+    }
+    .gallery-grid img {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+    .gallery-grid figure:hover img { transform: scale(1.03); }
+    .gallery-grid .wide { grid-column: span 2; }
+    @media (max-width: 480px) { .gallery-grid .wide { grid-column: span 1; } }
+    .gallery-grid .wide img { aspect-ratio: 16/9; }
+    .gallery-grid .tall img { aspect-ratio: 3/4; object-position: center top; }
+    figcaption {
+      position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);
+    }
+
+    .amenities { background: var(--white); }
+    .amenity-list {
+      list-style: none; padding: 0; margin: 0;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem;
+    }
+    .amenity-list li {
+      background: var(--cream); border-radius: var(--radius);
+      padding: 1.1rem 1.15rem; font-weight: 700; font-size: 0.96rem;
+      display: flex; gap: 0.65rem; align-items: flex-start;
+    }
+    .amenity-list li::before {
+      content: ""; width: 0.55rem; height: 0.55rem; margin-top: 0.45rem;
+      border-radius: 50%; background: var(--lake); flex-shrink: 0;
+    }
+    .amenity-list span {
+      display: block; font-weight: 400; color: var(--muted);
+      font-size: 0.86rem; margin-top: 0.2rem;
+    }
+
+    .cta-band {
+      background: linear-gradient(135deg, var(--pine-deep) 0%, var(--pine) 55%, #3f6a58 100%);
+      color: var(--white); text-align: center; padding: 3.5rem 0;
+    }
+    .cta-band h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem); margin: 0 0 0.55rem; font-weight: 600;
+    }
+    .cta-band p { margin: 0 0 1.4rem; opacity: 0.95; }
+    .cta-band .btn-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    .cta-band .btn-primary {
+      background: var(--white); color: var(--pine-deep);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .cta-band .btn-secondary {
+      background: transparent; color: #fff; border-color: rgba(255,255,255,0.45);
+    }
+
+    /* Mailing list */
+    .mail {
+      background: var(--cream);
+      padding: 3.25rem 0 4rem;
+    }
+    .mail-box {
+      background: var(--white);
+      border-radius: calc(var(--radius) + 4px);
+      padding: 2rem 1.75rem;
+      max-width: 32rem;
+      margin-inline: auto;
+      box-shadow: var(--shadow);
+      text-align: center;
+      border: 1px solid rgba(74, 124, 140, 0.18);
+    }
+    .mail-box h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.6rem;
+      margin: 0 0 0.4rem;
+      font-weight: 600;
+    }
+    .mail-box > p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 1.25rem;
+    }
+    #native-signup { background: transparent; }
+    #native-signup form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 0;
+    }
+    #native-signup label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+    #native-signup input[type="email"] {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1.5px solid rgba(47, 74, 60, 0.22);
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: var(--cream);
+    }
+    #native-signup input[type="email"]:focus {
+      outline: 2px solid var(--lake);
+      border-color: var(--lake);
+    }
+    #native-signup .button {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: none;
+      border-radius: 999px;
+      background: var(--lake-soft);
+      color: var(--pine-deep);
+      font-weight: 700;
+      font-size: 0.95rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    #native-signup .button:hover { background: #d5e8ee; }
+    #native-signup .button:disabled { opacity: 0.7; cursor: wait; }
+    #native-signup .hp {
+      position: absolute;
+      left: -5000px;
+      height: 0;
+      overflow: hidden;
+    }
+    #native-signup .signup-status {
+      margin: 0.25rem 0 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--pine-deep);
+    }
+    #native-signup .signup-status.error { color: #a33; }
+
+    footer {
+      text-align: center; padding: 1.75rem 1rem 2.25rem;
+      color: var(--muted); font-size: 0.9rem;
+      background: var(--white); border-top: 1px solid rgba(31,52,41,0.06);
+    }
+    footer p { margin: 0 0 0.45rem; }
+    footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.15em; }
+    footer a:hover { color: var(--ink); }
+      [hidden] { display: none !important; }
+  </style>
+  <style>
+    .page-head { background: var(--white); padding: 3.2rem 0 2rem; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .page-head h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.12; margin: 0 0 0.6rem; }
+    .page-head .eyebrow { color: var(--pine); opacity: 1; }
+    .page-head .sub { color: var(--muted); margin: 0; }
+    .narrow { max-width: 50rem; }
+    .toc { font-size: 0.9rem; margin-top: 1.2rem; color: var(--muted); line-height: 1.9; }
+    .toc a { text-decoration: none; font-weight: 600; }
+    .guide-sec { padding: 2.6rem 0; }
+    .guide-sec:nth-of-type(even) { background: var(--white); }
+    .guide-intro p { font-size: 1.08rem; }
+    .guide-sec h3 { font-size: 1.08rem; margin: 0 0 0.3rem; }
+    .guide-sec h3 a { color: var(--ink); text-decoration-color: var(--pine); text-underline-offset: 0.18em; }
+    .guide-sec .dist { font-weight: 400; color: var(--muted); font-size: 0.92rem; }
+    .place, .faq-item { margin: 0 0 1.5rem; }
+    .place p, .faq-item p { margin: 0 0 0.35rem; }
+    .links { font-size: 0.88rem; }
+    .muted { color: var(--muted); }
+    .house-box { background: var(--lake-soft); border-radius: var(--radius); padding: 1.3rem 1.5rem; margin: 0 0 1.5rem; }
+    .house-box h4 { margin: 1rem 0 0.3rem; font-size: 0.95rem; }
+    .house-box ul { margin: 0; padding-left: 1.2rem; }
+    .plan, .events { list-style: none; padding: 0; margin: 0; }
+    .plan li, .events li { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1rem 1.25rem; margin: 0 0 0.9rem; }
+    .guide-sec:nth-of-type(even) .plan li, .guide-sec:nth-of-type(even) .events li { background: var(--lake-soft); box-shadow: none; }
+    .plan h3, .events h4 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+    .plan p, .events p { margin: 0 0 0.2rem; }
+    .when { font-weight: 600; font-size: 0.92rem; }
+    .where { color: var(--muted); font-size: 0.92rem; }
+    .month { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.45rem; margin: 1.6rem 0 0.8rem; }
+    .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: var(--lake-soft); color: var(--pine); border-radius: 999px; padding: 0.15rem 0.55rem; vertical-align: middle; }
+    .events li.canceled h4, .events li.canceled .when { text-decoration: line-through; }
+    .nav-links { display: flex; gap: 1.1rem; flex-wrap: wrap; font-weight: 600; font-size: 0.95rem; }
+    .nav-links a { text-decoration: none; color: var(--ink); }
+    .nav-links a[aria-current] { color: var(--pine); }
+    .footnote { color: var(--muted); font-size: 0.92rem; }
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://wolfeboroevents.com/guide/#webpage", "name": "Wolfeboro NH Local Guide: Beaches, Trails, Food and Winter", "description": "Our family-friendly guide to Wolfeboro, NH: the rail trail, town beaches, the Wright Museum, ice cream, rainy-day ideas and what's open in winter.", "url": "https://wolfeboroevents.com/guide/", "inLanguage": "en-US", "dateModified": "2026-10-23"}, {"@type": "ItemList", "name": "Featured places", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Park", "name": "Cotton Valley Rail Trail", "url": "https://cottonvalleyrailtrail.org/trail-overview/"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "TouristAttraction", "name": "Mast Landing on Crescent Lake", "url": "https://www.google.com/maps/search/?api=1&query=43.593407,-71.200441"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Museum", "name": "Wright Museum of World War II", "url": "https://wrightmuseum.org/visit/"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Park", "name": "Bridge Falls Path", "url": "https://www.wolfeborochamber.com/directory-entries/russell-c-chase-bridge-falls-path"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "TouristAttraction", "name": "Downtown Wolfeboro", "url": "https://www.wolfeborochamber.com/"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Beach", "name": "Brewster Beach", "url": "https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=10"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Beach", "name": "Carry Beach", "url": "https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=2"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Beach", "name": "Albee Beach", "url": "https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=11"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Bakery", "name": "From Scratch Baking Co.", "url": "https://www.fromscratchbakingcompany.com/visit"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "CafeOrCoffeeShop", "name": "Harmony Coffee House", "url": "https://www.harmonycoffeehousenh.com/"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "Bakery", "name": "Baked by the Lake Bread Company", "url": "https://www.google.com/maps/search/?api=1&query=Baked+by+the+Lake+Bread+Company+83+Center+St+Wolfeboro+NH"}}, {"@type": "ListItem", "position": 12, "item": {"@type": "Restaurant", "name": "The Bay Diner", "url": "https://www.facebook.com/TheBayDiner22"}}, {"@type": "ListItem", "position": 13, "item": {"@type": "Restaurant", "name": "Nolan's Brick Oven Bistro", "url": "https://www.nolansbistro.com/"}}, {"@type": "ListItem", "position": 14, "item": {"@type": "Restaurant", "name": "Wolfgang's Pizza Subs & More", "url": "https://www.facebook.com/Wolfgangs-Pizza-Subs-More-163069793716673/"}}, {"@type": "ListItem", "position": 15, "item": {"@type": "Restaurant", "name": "Back Bay Boathouse", "url": "https://backbayboathouse.com/"}}, {"@type": "ListItem", "position": 16, "item": {"@type": "Restaurant", "name": "Burnt Timber Brewing & Tavern", "url": "https://www.burnttimbertavern.com/"}}, {"@type": "ListItem", "position": 17, "item": {"@type": "IceCreamShop", "name": "Bailey's Bubble", "url": "https://baileysbubble.com/"}}, {"@type": "ListItem", "position": 18, "item": {"@type": "IceCreamShop", "name": "Yum Yum Shop", "url": "https://www.yumyumshop.com/"}}, {"@type": "ListItem", "position": 19, "item": {"@type": "GroceryStore", "name": "Harvest Market", "url": "https://myharvestmarket.com/"}}, {"@type": "ListItem", "position": 20, "item": {"@type": "GroceryStore", "name": "Hunter's Shop 'n Save", "url": "https://huntersshopnsave.com/"}}, {"@type": "ListItem", "position": 21, "item": {"@type": "GroceryStore", "name": "Wolfeboro Area Farmers Market", "url": "https://www.wolfeborofarmersmarket.com/market-calendar"}}, {"@type": "ListItem", "position": 22, "item": {"@type": "TouristAttraction", "name": "M/S Mount Washington cruise", "url": "https://cruisenh.com/pages/narrated-scenic-tours"}}, {"@type": "ListItem", "position": 23, "item": {"@type": "TouristAttraction", "name": "The Village Players", "url": "https://www.village-players.com/"}}, {"@type": "ListItem", "position": 24, "item": {"@type": "Park", "name": "Cate Park Bandstand concerts", "url": "https://wolfeborobandstand.org/schedule/"}}, {"@type": "ListItem", "position": 25, "item": {"@type": "Museum", "name": "New Hampshire Boat Museum", "url": "https://www.nhbm.org/admission/"}}, {"@type": "ListItem", "position": 26, "item": {"@type": "TouristAttraction", "name": "Pop Whalen Ice & Arts Center", "url": "https://www.wolfeboronh.us/246/Pop-Whalen-Ice-Arts-Center"}}, {"@type": "ListItem", "position": 27, "item": {"@type": "TouristAttraction", "name": "Castle in the Clouds", "url": "https://www.castleintheclouds.org/hours-admission/"}}, {"@type": "ListItem", "position": 28, "item": {"@type": "Museum", "name": "Squam Lakes Natural Science Center", "url": "https://nhnature.org/visit/tickets/"}}, {"@type": "ListItem", "position": 29, "item": {"@type": "TouristAttraction", "name": "Kancamagus Scenic Byway", "url": "https://www.fs.usda.gov/r09/whitemountain/recreation/opportunities/scenic-drives"}}, {"@type": "ListItem", "position": 30, "item": {"@type": "TouristAttraction", "name": "Gunstock Mountain Resort", "url": "https://www.gunstock.com/"}}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you walk to downtown Wolfeboro from The Oaks?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Downtown is about a 20-minute walk. Mast Landing is about 5 minutes away on foot, the Wright Museum is about 10, and From Scratch is about 15."}}, {"@type": "Question", "name": "Which beaches can guests use?", "acceptedAnswer": {"@type": "Answer", "text": "Brewster is open to everyone. Carry and Albee need a town beach pass to park, and passes are limited to residents, taxpayers and their eligible guests, so check with the town first. All three are 3 to 7 minutes away by car."}}, {"@type": "Question", "name": "How long is the Cotton Valley Rail Trail?", "acceptedAnswer": {"@type": "Answer", "text": "About 12 miles, from downtown Wolfeboro out to Wakefield. In winter people snowshoe, cross-country ski and snowmobile on it."}}, {"@type": "Question", "name": "Is the Wright Museum open year-round?", "acceptedAnswer": {"@type": "Answer", "text": "No, it's open every day from May 1 to October 31, then closes for the winter."}}, {"@type": "Question", "name": "What can kids do in Wolfeboro on a rainy day?", "acceptedAnswer": {"@type": "Answer", "text": "In season, the Wright Museum. Any time of year, public skating at Pop Whalen, a movie night at The Village Players, or the arcade, foosball and games back at the house."}}, {"@type": "Question", "name": "What is open in Wolfeboro in winter?", "acceptedAnswer": {"@type": "Answer", "text": "Skiing at Gunstock Mountain Resort (about 35 minutes away) and, for a quick local run, Abenaki Ski Area (about 5 minutes away), the Pop Whalen rink, the indoor farmers market through mid-December, Last Night Wolfeboro on New Year's Eve, and year-round spots like Nolan's. A lot of the seasonal shops and museums close, though."}}, {"@type": "Question", "name": "Can you take a boat cruise from Wolfeboro?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in season. The M/S Mount Washington runs narrated Lake Winnipesaukee cruises right from Wolfeboro."}}, {"@type": "Question", "name": "What lake does The Oaks look out on?", "acceptedAnswer": {"@type": "Answer", "text": "Crescent Lake. Lake Winnipesaukee's Wolfeboro Bay is down in town."}}]}]}</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/">Wolfeboro <span>Events</span></a>
+      <nav class="nav-links" aria-label="Site"><a href="/">Events</a><a href="/guide/" aria-current="page">Town Guide</a></nav>
+    </div>
+  </header>
+  <main>
+  <section class="page-head"><div class="wrap narrow">
+    <p class="eyebrow">Wolfeboro, New Hampshire · Lakes Region</p>
+    <h1>Our Wolfeboro</h1>
+    <p class="toc"><a href="#getting-around-from-the-oaks">From the house</a> · <a href="#walk-and-explore">Walk and explore</a> · <a href="#town-beaches">Town beaches</a> · <a href="#our-favorite-bakery">Our favorite bakery</a> · <a href="#coffee-and-breakfast">Coffee and breakfast</a> · <a href="#lunch-dinner-and-pizza">Lunch, dinner and pizza</a> · <a href="#ice-cream">Ice cream</a> · <a href="#groceries">Groceries</a> · <a href="#on-the-water">On the water</a> · <a href="#shows-and-music">Shows and music</a> · <a href="#rainy-day-ideas">Rainy-day ideas</a> · <a href="#day-trips">Day trips</a> · <a href="#by-season">By season</a> · <a href="#faq">FAQ</a></p>
+  </div></section>
+<section class="guide-sec guide-intro"><div class="wrap narrow"><p>These are the places we send family and friends when they stay with us in Wolfeboro. The town beaches, the rail trail, a great bakery and more ice cream than anyone needs are all close by. A lot of places close for the winter, so it&#x27;s worth checking before you go. For what&#x27;s on this month, see our <a href="/">events page</a>.</p></div></section>
+<section class="guide-sec" id="getting-around-from-the-oaks"><div class="wrap narrow"><h2 class="section-title">Getting around from The Oaks</h2>
+<div class="house-box"><h4>Walks from the house</h4><ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=43.593407,-71.200441" target="_blank" rel="noopener">Mast Landing</a> on Crescent Lake: about a 5-minute walk</li><li><a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum of World War II</a>: about a 10-minute walk</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Baked+by+the+Lake+Bread+Company+83+Center+St+Wolfeboro+NH" target="_blank" rel="noopener">Baked by the Lake Bread Company</a> (83 Center Street): our favorite sandwiches in town, plus breads, pastries and coffee. About a 10-minute walk, or a 1-minute drive.</li><li><a href="https://www.facebook.com/Wolfgangs-Pizza-Subs-More-163069793716673/" target="_blank" rel="noopener">Wolfgang&#x27;s Pizza Subs &amp; More</a> (45 Center Street): a 15-minute walk, or a 1-minute drive</li><li><a href="https://www.fromscratchbakingcompany.com/visit" target="_blank" rel="noopener">From Scratch Baking Co.</a> (36 Center Street): a 15-minute walk, or a 2-minute drive</li><li><a href="https://www.burnttimbertavern.com/" target="_blank" rel="noopener">Burnt Timber Brewing &amp; Tavern</a> (Lehner Street): a 15 to 20-minute walk, or a 2-minute drive</li><li><a href="https://www.village-players.com/" target="_blank" rel="noopener">The Village Players theater</a> (Glendon Street): a 20-minute walk, or a 3-minute drive</li><li><a href="https://www.wolfeborochamber.com/directory-entries/russell-c-chase-bridge-falls-path" target="_blank" rel="noopener">Bridge Falls Path</a>: about a 20-minute walk</li></ul><h4>Downtown</h4><ul><li><a href="https://www.wolfeborochamber.com/" target="_blank" rel="noopener">Downtown Wolfeboro</a> and the <a href="https://cottonvalleyrailtrail.org/trail-overview/" target="_blank" rel="noopener">Cotton Valley Rail Trail</a> trailhead on Depot Street: about a 20-minute walk</li><li><a href="https://www.harmonycoffeehousenh.com/" target="_blank" rel="noopener">Harmony Coffee House</a> (Central Avenue), <a href="https://baileysbubble.com/" target="_blank" rel="noopener">Bailey&#x27;s Bubble</a>, <a href="https://www.yumyumshop.com/" target="_blank" rel="noopener">Yum Yum Shop</a>, <a href="https://wolfeborobandstand.org/schedule/" target="_blank" rel="noopener">Cate Park</a>, the town docks, <a href="https://www.facebook.com/TheBayDiner22" target="_blank" rel="noopener">The Bay Diner</a> and <a href="https://huntersshopnsave.com/" target="_blank" rel="noopener">Hunter&#x27;s Shop &#x27;n Save</a>: about a 20 to 25-minute walk, or about a 4-minute drive</li><li><a href="https://www.nolansbistro.com/" target="_blank" rel="noopener">Nolan&#x27;s</a> on North Main Street: a 25-minute walk, or a 5-minute drive</li><li><a href="https://backbayboathouse.com/" target="_blank" rel="noopener">Back Bay Boathouse</a> on Mill Street: about a 30-minute walk, or a 4 to 5-minute drive</li></ul><h4>Short drives</h4><p><a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=11" target="_blank" rel="noopener">Albee Beach</a> is about 3 minutes away, <a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=10" target="_blank" rel="noopener">Brewster Beach</a> is about 5, and <a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=2" target="_blank" rel="noopener">Carry Beach</a> is about 7. The <a href="https://www.wolfeboronh.us/246/Pop-Whalen-Ice-Arts-Center" target="_blank" rel="noopener">Pop Whalen Ice &amp; Arts Center</a> and <a href="https://www.wolfeboronh.us/245/Abenaki-Ski-Area" target="_blank" rel="noopener">Abenaki Ski Area</a> sit side by side on Pine Hill Road, about 5 minutes away.</p></div>
+</div></section>
+<section class="guide-sec" id="walk-and-explore"><div class="wrap narrow"><h2 class="section-title">Walk and explore</h2>
+<div class="place"><h3><a href="https://cottonvalleyrailtrail.org/trail-overview/" target="_blank" rel="noopener">Cotton Valley Rail Trail</a></h3><p>12 miles of hard-packed trail on the old rail bed, from downtown Wolfeboro out to Wakefield, past two lakes, over trestles and through woods and wetlands. Great for walking, biking and strollers in summer, and for snowshoes, cross-country skis and snowmobiles once there&#x27;s snow.</p></div>
+<div class="place"><h3><a href="https://www.google.com/maps/search/?api=1&amp;query=43.593407,-71.200441" target="_blank" rel="noopener">Mast Landing on Crescent Lake</a> <span class="dist">(about a 5-minute walk)</span></h3><p>A little public boat landing on Crescent Lake, the lake you look out on from the house.</p></div>
+<div class="place"><h3><a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum of World War II</a> <span class="dist">(about a 10-minute walk)</span></h3><p>A surprisingly big World War II museum right on Center Street. Open every day from May 1 to October 31.</p></div>
+<div class="place"><h3><a href="https://www.wolfeborochamber.com/directory-entries/russell-c-chase-bridge-falls-path" target="_blank" rel="noopener">Bridge Falls Path</a> <span class="dist">(about a 20-minute walk)</span></h3><p>A short, pretty path behind the old train station downtown, along Back Bay toward Wolfeboro Falls.</p></div>
+<div class="place"><h3><a href="https://www.wolfeborochamber.com/" target="_blank" rel="noopener">Downtown Wolfeboro</a> <span class="dist">(about a 20-minute walk)</span></h3><p>Shops, coffee, restaurants, the town docks on Lake Winnipesaukee and, of course, ice cream.</p></div>
+</div></section>
+<section class="guide-sec" id="town-beaches"><div class="wrap narrow"><h2 class="section-title">Town beaches</h2>
+<p>Wolfeboro has three town beaches, all a short drive.</p>
+<div class="place"><h3><a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=10" target="_blank" rel="noopener">Brewster Beach (Lake Winnipesaukee)</a> <span class="dist">(about a 5-minute drive)</span></h3><p>The busy one in summer and the one that&#x27;s open to everyone. It&#x27;s where the town&#x27;s swim lessons and swim team are, and there are picnic tables. It&#x27;s also a great spot for the Fourth of July fireworks over Wolfeboro Bay.</p></div>
+<div class="place"><h3><a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=2" target="_blank" rel="noopener">Carry Beach</a> <span class="dist">(about a 7-minute drive)</span></h3><p>Quiet and shallow, so it&#x27;s good for little swimmers.</p></div>
+<div class="place"><h3><a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=11" target="_blank" rel="noopener">Albee Beach (Lake Wentworth)</a> <span class="dist">(about a 3-minute drive)</span></h3><p>A quiet beach with picnic tables, right on the <a href="https://cottonvalleyrailtrail.org/trail-overview/" target="_blank" rel="noopener">Cotton Valley Rail Trail</a>. You can bike into town for lunch and ice cream, then ride back for a swim.</p></div>
+<p>You need a town beach pass to park at Carry and Albee, and passes are limited to residents, taxpayers and their eligible guests, so check with the town before you go. Lifeguards aren&#x27;t always on duty, so keep an eye on the kids. The town posts water test results at <a href="https://www.wolfeboronh.us/235/Parks-Recreation" target="_blank" rel="noopener">wolfeboronh.us</a>.</p>
+</div></section>
+<section class="guide-sec" id="our-favorite-bakery"><div class="wrap narrow"><h2 class="section-title">Our favorite bakery</h2>
+<div class="place"><h3><a href="https://www.fromscratchbakingcompany.com/visit" target="_blank" rel="noopener">From Scratch Baking Co.</a></h3><p>Our go-to bakery, at 36 Center Street, a 15-minute walk or a 2-minute drive. They&#x27;re open Tuesday to Saturday, 8 a.m. to 5:30 p.m., but hours can change, so give them a call first.</p></div>
+</div></section>
+<section class="guide-sec" id="coffee-and-breakfast"><div class="wrap narrow"><h2 class="section-title">Coffee and breakfast</h2>
+<div class="place"><h3><a href="https://www.harmonycoffeehousenh.com/" target="_blank" rel="noopener">Harmony Coffee House</a> <span class="dist">(about a 20 to 25-minute walk, or about a 4-minute drive)</span></h3><p>A cozy coffee house at 21 Central Avenue with a fireplace, Scandinavian and American treats and light bites. Open Monday to Saturday, 6 a.m. to 4 p.m.</p></div>
+<div class="place"><h3><a href="https://www.google.com/maps/search/?api=1&amp;query=Baked+by+the+Lake+Bread+Company+83+Center+St+Wolfeboro+NH" target="_blank" rel="noopener">Baked by the Lake Bread Company</a> <span class="dist">(about a 10-minute walk, or a 1-minute drive)</span></h3><p>Our favorite sandwiches in town, plus breads, pastries and coffee, at 83 Center Street.</p></div>
+<div class="place"><h3><a href="https://www.facebook.com/TheBayDiner22" target="_blank" rel="noopener">The Bay Diner</a> <span class="dist">(about a 20 to 25-minute walk, or about a 4-minute drive)</span></h3><p>A small, friendly diner at 5 North Main Street downtown, serving breakfast and lunch.</p></div>
+</div></section>
+<section class="guide-sec" id="lunch-dinner-and-pizza"><div class="wrap narrow"><h2 class="section-title">Lunch, dinner and pizza</h2>
+<div class="place"><h3><a href="https://www.nolansbistro.com/" target="_blank" rel="noopener">Nolan&#x27;s Brick Oven Bistro</a> <span class="dist">(a 25-minute walk, or a 5-minute drive)</span></h3><p>Wood-fired pizza and Italian on North Main Street, open seven days a week, all year.</p></div>
+<div class="place"><h3><a href="https://www.facebook.com/Wolfgangs-Pizza-Subs-More-163069793716673/" target="_blank" rel="noopener">Wolfgang&#x27;s Pizza Subs &amp; More</a> <span class="dist">(a 15-minute walk, or a 1-minute drive)</span></h3><p>Pizza and subs to eat in or take home, at 45 Center Street on the way into town.</p></div>
+<div class="place"><h3><a href="https://backbayboathouse.com/" target="_blank" rel="noopener">Back Bay Boathouse</a> <span class="dist">(about a 30-minute walk, or a 4 to 5-minute drive)</span></h3><p>Easygoing lunch and dinner on Back Bay at 51 Mill Street, with a kids menu. Open every day, 11 a.m. to 9 p.m.</p></div>
+<div class="place"><h3><a href="https://www.burnttimbertavern.com/" target="_blank" rel="noopener">Burnt Timber Brewing &amp; Tavern</a> <span class="dist">(a 15 to 20-minute walk, or a 2-minute drive)</span></h3><p>A family-friendly brewpub on Lehner Street, just off the rail trail, with farmhouse-style beers, cider and applewood-smoked BBQ. Kids are welcome, and dogs are welcome on the patio. Open Wednesday to Friday 4 to 10 p.m., Saturday noon to 10, and Sunday 11 to 4.</p></div>
+</div></section>
+<section class="guide-sec" id="ice-cream"><div class="wrap narrow"><h2 class="section-title">Ice cream</h2>
+<div class="place"><h3><a href="https://baileysbubble.com/" target="_blank" rel="noopener">Bailey&#x27;s Bubble</a> <span class="dist">(about a 20 to 25-minute walk, or about a 4-minute drive)</span></h3><p>Scooping in Wolfeboro since 1954. It&#x27;s a seasonal spot, so check that they&#x27;re open.</p></div>
+<div class="place"><h3><a href="https://www.yumyumshop.com/" target="_blank" rel="noopener">Yum Yum Shop</a> <span class="dist">(about a 20 to 25-minute walk, or about a 4-minute drive)</span></h3><p>A Wolfeboro bakery and ice cream parlor since 1948. Get the frosted gingerbread cookies they&#x27;re famous for, plus donuts, bread, pies and ice cream. Open every day, all year, from 7 a.m. Closing time changes with the season.</p></div>
+</div></section>
+<section class="guide-sec" id="groceries"><div class="wrap narrow"><h2 class="section-title">Groceries</h2>
+<div class="place"><h3><a href="https://huntersshopnsave.com/" target="_blank" rel="noopener">Hunter&#x27;s Shop &#x27;n Save</a> <span class="dist">(about a 20 to 25-minute walk, or about a 4-minute drive)</span></h3><p>The family-owned grocery store at 60 South Main Street, rebuilt and reopened in 2024 after a fire.</p></div>
+<div class="place"><h3><a href="https://myharvestmarket.com/" target="_blank" rel="noopener">Harvest Market</a></h3><p>Another grocery option in town.</p></div>
+<div class="place"><h3><a href="https://www.wolfeborofarmersmarket.com/market-calendar" target="_blank" rel="noopener">Wolfeboro Area Farmers Market</a></h3><p>Every Thursday. It&#x27;s outdoors in the warmer months, then moves inside to the <a href="https://www.wolfeboronh.us/245/Abenaki-Ski-Area" target="_blank" rel="noopener">Abenaki Ski Lodge</a> from 2 to 4:30 p.m., starting October 15 and running through mid-December.</p></div>
+</div></section>
+<section class="guide-sec" id="on-the-water"><div class="wrap narrow"><h2 class="section-title">On the water</h2>
+<div class="place"><h3><a href="https://cruisenh.com/pages/narrated-scenic-tours" target="_blank" rel="noopener">M/S Mount Washington cruise</a> <span class="dist">(from the Wolfeboro town docks, about a 20 to 25-minute walk or about a 4-minute drive)</span></h3><p>Narrated cruises around Lake Winnipesaukee that leave from Wolfeboro in season. This year they added a second Wolfeboro departure, and you can get off at Weirs Beach.</p></div>
+</div></section>
+<section class="guide-sec" id="shows-and-music"><div class="wrap narrow"><h2 class="section-title">Shows and music</h2>
+<div class="place"><h3><a href="https://www.village-players.com/" target="_blank" rel="noopener">The Village Players</a> <span class="dist">(a 20-minute walk, or a 3-minute drive)</span></h3><p>Wolfeboro&#x27;s year-round community theater, in an 1888 church on Glendon Street. They put on a musical and a couple of plays every year, and there&#x27;s a classic <a href="https://www.village-players.com/movies/" target="_blank" rel="noopener">movie night</a> about once a month ($7, popcorn available). Coming up: Man of La Mancha (October 30 to November 8, 2026), A Charlie Brown Christmas (December 4 to 6, 2026), and <a href="https://www.village-players.com/movies/" target="_blank" rel="noopener">movie nights</a> on October 24, November 21 and December 19.</p></div>
+<div class="place"><h3><a href="https://wolfeborobandstand.org/schedule/" target="_blank" rel="noopener">Cate Park Bandstand concerts</a></h3><p>Free Saturday-evening concerts (7 to 9 p.m.) by the town docks all summer (July 11 to September 5 in 2026). Bring a chair or a blanket.</p></div>
+</div></section>
+<section class="guide-sec" id="rainy-day-ideas"><div class="wrap narrow"><h2 class="section-title">Rainy-day ideas</h2>
+<div class="place"><h3><a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum of World War II</a> <span class="dist">(May to October)</span></h3></div>
+<div class="place"><h3><a href="https://www.wolfeboronh.us/246/Pop-Whalen-Ice-Arts-Center" target="_blank" rel="noopener">Pop Whalen Ice &amp; Arts Center</a> <span class="dist">(about a 5-minute drive)</span></h3><p>The town&#x27;s indoor rink, with public skating. The schedule&#x27;s on the town website.</p></div>
+<div class="place"><h3><a href="https://www.village-players.com/" target="_blank" rel="noopener">The Village Players</a> <span class="dist">(a 3-minute drive)</span></h3><p>Catch a classic <a href="https://www.village-players.com/movies/" target="_blank" rel="noopener">movie night</a> or a show (dates above).</p></div>
+<div class="place"><h3><a href="https://wolfeborooaks.com/">At The Oaks</a></h3><p>Honestly, the house is pretty good on a rainy day: a two-player arcade, foosball, the piano, puzzles, toys and dress-ups, and a big screen for movie night.</p></div>
+</div></section>
+<section class="guide-sec" id="day-trips"><div class="wrap narrow"><h2 class="section-title">Day trips</h2>
+<div class="place"><h3><a href="https://www.castleintheclouds.org/hours-admission/" target="_blank" rel="noopener">Castle in the Clouds (Moultonborough)</a> <span class="dist">(about a 30-minute drive)</span></h3><p>A historic mountaintop estate with big views over the Lakes Region. The mansion is open May 23 to October 25 this year, and the trails are open year-round.</p></div>
+<div class="place"><h3><a href="https://www.nhbm.org/admission/" target="_blank" rel="noopener">New Hampshire Boat Museum (Moultonborough)</a> <span class="dist">(about a 35-minute drive)</span></h3><p>Classic wooden boats and lake history. The main exhibits are now in Moultonborough. This year&#x27;s season ended October 11, so it&#x27;ll be back next spring.</p></div>
+<div class="place"><h3><a href="https://nhnature.org/visit/tickets/" target="_blank" rel="noopener">Squam Lakes Natural Science Center (Holderness)</a> <span class="dist">(about a 50-minute drive)</span></h3><p>Walk the live animal trail and meet New Hampshire&#x27;s native wildlife up close. Open daily May 1 to November 1 this year.</p></div>
+<div class="place"><h3><a href="https://www.fs.usda.gov/r09/whitemountain/recreation/opportunities/scenic-drives" target="_blank" rel="noopener">Kancamagus Scenic Byway (White Mountains)</a> <span class="dist">(about 1 hour 10 minutes to the Conway end)</span></h3><p>34 miles through the White Mountain National Forest. It&#x27;s famous for fall color, and for good reason.</p></div>
+<div class="place"><h3><a href="https://www.gunstock.com/" target="_blank" rel="noopener">Gunstock Mountain Resort (Gilford)</a> <span class="dist">(about a 35-minute drive)</span></h3><p>Skiing, snowboarding, tubing and Nordic trails in winter.</p></div>
+</div></section>
+<section class="guide-sec" id="by-season"><div class="wrap narrow"><h2 class="section-title">By season</h2>
+<div class="place"><h3>Spring (April to May)</h3><p>Mud season first, then everything turns green. The <a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum</a> opens May 1, the <a href="https://www.wolfeborofarmersmarket.com/market-calendar" target="_blank" rel="noopener">farmers market</a> heads back outdoors, <a href="https://www.castleintheclouds.org/hours-admission/" target="_blank" rel="noopener">Castle in the Clouds</a> opens late in the month, and the <a href="https://cottonvalleyrailtrail.org/trail-overview/" target="_blank" rel="noopener">rail trail</a> dries out for biking.</p></div>
+<div class="place"><h3>Summer (June to August)</h3><p>Beach days, <a href="https://cruisenh.com/pages/narrated-scenic-tours" target="_blank" rel="noopener">Mount Washington cruises</a>, <a href="https://wolfeborobandstand.org/schedule/" target="_blank" rel="noopener">Saturday concerts at Cate Park</a>, cones from <a href="https://baileysbubble.com/" target="_blank" rel="noopener">Bailey&#x27;s Bubble</a>, and the <a href="https://www.wolfeborochamber.com/events/independence-day-in-wolfeboro-2w3fk-6wm9a-md882-r4edm-k8hr4" target="_blank" rel="noopener">Fourth of July parade</a> and fireworks over Wolfeboro Bay. More at <a href="https://www.wolfeborochamber.com/events" target="_blank" rel="noopener">wolfeborochamber.com</a>.</p></div>
+<div class="place"><h3>Fall (September to November)</h3><p>Fall color on the <a href="https://cottonvalleyrailtrail.org/trail-overview/" target="_blank" rel="noopener">rail trail</a> and the <a href="https://www.fs.usda.gov/r09/whitemountain/recreation/opportunities/scenic-drives" target="_blank" rel="noopener">Kancamagus</a>, last chances at the seasonal museums and <a href="https://www.castleintheclouds.org/hours-admission/" target="_blank" rel="noopener">Castle in the Clouds</a>, and the <a href="https://www.wolfeborofarmersmarket.com/market-calendar" target="_blank" rel="noopener">indoor farmers market</a> starting mid-October.</p></div>
+<div class="place"><h3>Winter and the off-season (December to March)</h3><p>Winter here means skiing at <a href="https://www.gunstock.com/" target="_blank" rel="noopener">Gunstock Mountain Resort</a> in Gilford, the Lakes Region&#x27;s big mountain, about 35 minutes away with night skiing and lake views. For a quick local run, the town-run <a href="https://www.wolfeboronh.us/245/Abenaki-Ski-Area" target="_blank" rel="noopener">Abenaki Ski Area</a>, about 5 minutes away, is open some weekday evenings and weekends (the 2026 to 2027 season is set to open around December 26, weather permitting). Skate at <a href="https://www.wolfeboronh.us/246/Pop-Whalen-Ice-Arts-Center" target="_blank" rel="noopener">Pop Whalen</a>, or snowshoe the <a href="https://cottonvalleyrailtrail.org/trail-overview/" target="_blank" rel="noopener">rail trail</a>. The <a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=10" target="_blank" rel="noopener">Brewster</a> and <a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=2" target="_blank" rel="noopener">Carry</a> beach lots get plowed so you can get out on the ice (Albee&#x27;s lot closes after the first snow). On New Year&#x27;s Eve there&#x27;s <a href="https://www.wolfeboronh.us/672/Last-Night-Wolfeboro" target="_blank" rel="noopener">Last Night Wolfeboro</a>. Plenty of shops close for the winter, along with <a href="https://baileysbubble.com/" target="_blank" rel="noopener">Bailey&#x27;s Bubble</a> and the <a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum</a>, so check before you go.</p></div>
+</div></section>
+<section class="guide-sec" id="faq"><div class="wrap narrow"><h2 class="section-title">Questions we get a lot</h2>
+<div class="faq-item"><h3>Can you walk to downtown Wolfeboro from The Oaks?</h3><p>Yes! <a href="https://www.wolfeborochamber.com/" target="_blank" rel="noopener">Downtown</a> is about a 20-minute walk. <a href="https://www.google.com/maps/search/?api=1&amp;query=43.593407,-71.200441" target="_blank" rel="noopener">Mast Landing</a> is about 5 minutes away on foot, the <a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum</a> is about 10, and <a href="https://www.fromscratchbakingcompany.com/visit" target="_blank" rel="noopener">From Scratch</a> is about 15.</p></div>
+<div class="faq-item"><h3>Which beaches can guests use?</h3><p><a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=10" target="_blank" rel="noopener">Brewster</a> is open to everyone. <a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=2" target="_blank" rel="noopener">Carry</a> and <a href="https://wolfeboro.recdesk.com/Community/Facility/Detail?facilityId=11" target="_blank" rel="noopener">Albee</a> need a town beach pass to park, and passes are limited to residents, taxpayers and their eligible guests, so check with the town first. All three are 3 to 7 minutes away by car.</p></div>
+<div class="faq-item"><h3>How long is the Cotton Valley Rail Trail?</h3><p>About 12 miles, from downtown Wolfeboro out to Wakefield. In winter people snowshoe, cross-country ski and snowmobile on it.</p></div>
+<div class="faq-item"><h3>Is the Wright Museum open year-round?</h3><p>No, it&#x27;s open every day from May 1 to October 31, then closes for the winter.</p></div>
+<div class="faq-item"><h3>What can kids do in Wolfeboro on a rainy day?</h3><p>In season, the <a href="https://wrightmuseum.org/visit/" target="_blank" rel="noopener">Wright Museum</a>. Any time of year, public skating at <a href="https://www.wolfeboronh.us/246/Pop-Whalen-Ice-Arts-Center" target="_blank" rel="noopener">Pop Whalen</a>, a <a href="https://www.village-players.com/movies/" target="_blank" rel="noopener">movie night</a> at <a href="https://www.village-players.com/" target="_blank" rel="noopener">The Village Players</a>, or the arcade, foosball and games back at the house.</p></div>
+<div class="faq-item"><h3>What is open in Wolfeboro in winter?</h3><p>Skiing at <a href="https://www.gunstock.com/" target="_blank" rel="noopener">Gunstock Mountain Resort</a> (about 35 minutes away) and, for a quick local run, <a href="https://www.wolfeboronh.us/245/Abenaki-Ski-Area" target="_blank" rel="noopener">Abenaki Ski Area</a> (about 5 minutes away), the <a href="https://www.wolfeboronh.us/246/Pop-Whalen-Ice-Arts-Center" target="_blank" rel="noopener">Pop Whalen</a> rink, the <a href="https://www.wolfeborofarmersmarket.com/market-calendar" target="_blank" rel="noopener">indoor farmers market</a> through mid-December, <a href="https://www.wolfeboronh.us/672/Last-Night-Wolfeboro" target="_blank" rel="noopener">Last Night Wolfeboro</a> on New Year&#x27;s Eve, and year-round spots like <a href="https://www.nolansbistro.com/" target="_blank" rel="noopener">Nolan&#x27;s</a>. A lot of the seasonal shops and museums close, though.</p></div>
+<div class="faq-item"><h3>Can you take a boat cruise from Wolfeboro?</h3><p>Yes, in season. The <a href="https://cruisenh.com/pages/narrated-scenic-tours" target="_blank" rel="noopener">M/S Mount Washington</a> runs narrated Lake Winnipesaukee cruises right from Wolfeboro.</p></div>
+<div class="faq-item"><h3>What lake does The Oaks look out on?</h3><p><a href="https://wentworthwatershed.org/land-owned-by-the-association/crescent-lake/" target="_blank" rel="noopener">Crescent Lake</a>. Lake Winnipesaukee&#x27;s Wolfeboro Bay is down in town.</p></div>
+</div></section>
+<section class="guide-sec"><div class="wrap narrow"><p class="suggest">Have a favorite spot we should add? <a href="mailto:host@wolfeborostays.com?subject=Wolfeboro%20guide%20suggestion">Tell us about it</a>.</p></div></section>
+  </main>
+  <section class="mail" id="mailing-list">
+    <div class="wrap">
+      <p class="lead-in" style="max-width:32rem;margin:0 auto 1.25rem;text-align:center;">We hope your group finds its own favorite corners of Wolfeboro. Want to know what&#x27;s on next season? Our events email has you covered.</p>
+      <div class="mail-box">
+        <h2>Get the Wolfeboro events email</h2>
+        <p>Once a season, we round up what&#x27;s coming up around Wolfeboro and the Lakes Region, from summer concerts to winter weekends.</p>
+        <div id="native-signup">
+          <form id="signup-form" class="signup-form" novalidate>
+            <label for="signup-email">Email address</label>
+            <input type="email" name="email" id="signup-email" class="required email" placeholder="Email address" required autocomplete="email" />
+            <div class="hp" aria-hidden="true">
+              <label for="signup-website">Website</label>
+              <input type="text" name="website" id="signup-website" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="ts" value="" />
+            </div>
+            <input type="hidden" name="list" value="oaks" />
+            <input type="hidden" name="source_page" value="guide" />
+            <input type="hidden" name="page" value="/guide/" />
+            <div class="cf-turnstile" data-sitekey="__TURNSTILE_SITE_KEY__" data-size="flexible" data-theme="light" style="margin:10px 0;"></div>
+            <button type="submit" class="button" id="signup-submit">Sign me up</button>
+            <p class="signup-privacy" style="font-size:0.85rem;color:var(--muted);margin:10px 0 0;">Just four emails a year, plus the odd note about our houses. Unsubscribe whenever you like.</p>
+            <p id="signup-status" class="signup-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </div>
+      <p style="text-align:center;margin:1.25rem 0 0;">Thanks, Andrew and Julie</p>
+    </div>
+  </section>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/assets/signup.js" defer></script>
+  <footer>
+    <p>Put together by Andrew and Julie at Wolfeboro Stays. See our Wolfeboro vacation rentals at <a href="https://wolfeborostays.com/">wolfeborostays.com</a>.</p>
+    <p>Questions or local tips? <a href="mailto:host@wolfeborostays.com?subject=Wolfeboro%20Events%20question">Email us</a></p>
+    <span>&copy; 2026 Wolfeboro Events · Wolfeboro, NH</span>
+  </footer>
+</body>
+</html>
