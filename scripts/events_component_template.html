@@ -324,9 +324,14 @@
     .month { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.45rem; margin: 1.6rem 0 0.8rem; }
     .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: var(--lake-soft); color: var(--pine); border-radius: 999px; padding: 0.15rem 0.55rem; vertical-align: middle; }
     .events li.canceled h4, .events li.canceled .when { text-decoration: line-through; }
+    .brand { white-space: nowrap; }
     .nav-links { display: flex; gap: 1.1rem; flex-wrap: wrap; font-weight: 600; font-size: 0.95rem; }
-    .nav-links a { text-decoration: none; color: var(--ink); }
+    .nav-links a { text-decoration: none; color: var(--ink); white-space: nowrap; }
     .nav-links a[aria-current] { color: var(--pine); }
+    @media (max-width: 680px) {
+      .nav-inner { flex-wrap: wrap; gap: 0.35rem 1rem; padding: 0.65rem 0; }
+      .nav-links { width: 100%; gap: 0.85rem; font-size: 0.88rem; }
+    }
     .footnote { color: var(--muted); font-size: 0.92rem; }
   </style>
   <link rel="stylesheet" href="/assets/events/events-component.css" />

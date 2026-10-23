@@ -26,169 +26,160 @@
       --pine: #2f4a3c;
       --pine-deep: #1f3429;
       --lake: #4a7c8c;
-      --sand: #f4ece1;
-      --birch: #e8dfd0;
+      --lake-soft: #e6eff2;
       --ink: #1e2420;
       --muted: #5c6b63;
       --cream: #f6f1e8;
-      --white: #fff;
-      --shadow: 0 14px 40px rgba(31, 52, 41, 0.12);
+      --white: #ffffff;
+      --shadow: 0 12px 40px rgba(31, 52, 41, 0.12);
       --radius: 14px;
+      --max: 1080px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       min-height: 100vh;
-      font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
-      color: var(--ink);
-      background: var(--cream);
-      line-height: 1.65;
       display: flex;
       flex-direction: column;
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.55;
     }
+    img { max-width: 100%; display: block; height: auto; }
     a { color: var(--lake); }
-    .wrap { width: min(100% - 2rem, 1080px); margin-inline: auto; }
+    .wrap { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+
     .nav {
       position: sticky;
       top: 0;
       z-index: 20;
       background: rgba(246, 241, 232, 0.94);
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(31, 52, 41, 0.08);
     }
     .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.75rem 0;
+      padding: 0.9rem 0;
       gap: 1rem;
     }
     .brand {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: var(--pine-deep);
-      text-decoration: none;
+      font-size: 1.45rem; font-weight: 700;
+      color: var(--pine-deep); text-decoration: none;
       letter-spacing: -0.02em;
+      white-space: nowrap;
     }
     .brand span { color: var(--lake); }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      font-size: 0.92rem;
+    .nav-links { display: flex; gap: 1.1rem; flex-wrap: wrap; font-weight: 600; font-size: 0.95rem; }
+    .nav-links a { text-decoration: none; color: var(--ink); white-space: nowrap; }
+    .nav-links a[aria-current] { color: var(--pine); }
+    @media (max-width: 680px) {
+      .nav-inner { flex-wrap: wrap; gap: 0.35rem 1rem; padding: 0.65rem 0; }
+      .nav-links { width: 100%; gap: 0.85rem; font-size: 0.88rem; }
     }
-    .nav-links a {
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .nav-links a:hover { color: var(--pine); }
-    .nav-links a[aria-current="page"] {
-      color: var(--pine-deep);
-      text-decoration: underline;
-      text-underline-offset: 6px;
-      text-decoration-thickness: 2px;
-    }
-    @media (max-width: 540px) {
-      .nav-links { gap: 0.85rem; font-size: 0.85rem; }
-    }
+
     main {
       flex: 1;
       display: flex;
       align-items: center;
-      background: linear-gradient(180deg, var(--sand) 0%, var(--birch) 100%);
     }
+
+    /* Mailing list */
     .mail {
       width: 100%;
-      padding: 3.5rem 0 4rem;
+      background: var(--cream);
+      padding: 3.25rem 0 4rem;
     }
     .mail-box {
-      max-width: 640px;
-      margin-inline: auto;
       background: var(--white);
-      border-radius: var(--radius);
+      border-radius: calc(var(--radius) + 4px);
+      padding: 2rem 1.75rem;
+      max-width: 32rem;
+      margin-inline: auto;
       box-shadow: var(--shadow);
-      padding: 1.75rem 1.4rem;
       text-align: center;
+      border: 1px solid rgba(74, 124, 140, 0.18);
     }
-    @media (min-width: 640px) { .mail-box { padding: 2.25rem 2.25rem; } }
-    .mail-box h1 {
+    .mail-box h1, .mail-box h2 {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      font-size: clamp(1.75rem, 3.8vw, 2.3rem);
-      margin: 0 0 0.5rem;
-      color: var(--pine-deep);
-    }
-    .mail-box p { color: var(--muted); margin: 0 0 1.25rem; }
-    #native-signup { text-align: left; }
-    #native-signup .signup-form { margin: 0; font: inherit; }
-    #native-signup label {
-      display: block;
+      font-size: 1.6rem;
+      margin: 0 0 0.4rem;
       font-weight: 600;
-      font-size: 0.85rem;
-      margin-bottom: 0.35rem;
-      color: var(--ink);
+    }
+    .mail-box > p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 1.25rem;
+    }
+    #native-signup { background: transparent; }
+    #native-signup form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 0;
+    }
+    #native-signup label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
     }
     #native-signup input[type="email"] {
       width: 100%;
-      padding: 0.85rem 1rem;
-      border: 1px solid rgba(31, 52, 41, 0.22);
+      padding: 0.9rem 1rem;
+      border: 1.5px solid rgba(47, 74, 60, 0.22);
       border-radius: 10px;
-      font: inherit;
-      margin-bottom: 0.75rem;
-      background: #fff;
+      font-size: 1rem;
+      font-family: inherit;
+      background: var(--cream);
     }
     #native-signup input[type="email"]:focus {
-      outline: 2px solid rgba(74, 124, 140, 0.45);
+      outline: 2px solid var(--lake);
       border-color: var(--lake);
     }
+    #native-signup .button {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: none;
+      border-radius: 999px;
+      background: var(--lake-soft);
+      color: var(--pine-deep);
+      font-weight: 700;
+      font-size: 0.95rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    #native-signup .button:hover { background: #d5e8ee; }
+    #native-signup .button:disabled { opacity: 0.7; cursor: wait; }
     #native-signup .hp {
       position: absolute;
       left: -5000px;
       height: 0;
       overflow: hidden;
     }
-    #native-signup .button {
-      width: 100%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.9rem 1.35rem;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 0.98rem;
-      border: none;
-      cursor: pointer;
-      color: var(--white);
-      background: linear-gradient(135deg, var(--pine) 0%, var(--pine-deep) 100%);
-      box-shadow: 0 10px 24px rgba(31, 52, 41, 0.22);
-      font-family: inherit;
-    }
-    #native-signup .button:hover { filter: brightness(1.05); }
-    #native-signup .button:disabled { opacity: 0.7; cursor: wait; }
-    .signup-status {
-      margin: 0.85rem 0 0;
+    #native-signup .signup-status {
+      margin: 0.25rem 0 0;
       font-size: 0.95rem;
       font-weight: 600;
       color: var(--pine-deep);
-      text-align: center;
     }
-    .signup-status.error { color: #a33; }
-    [hidden] { display: none !important; }
+    #native-signup .signup-status.error { color: #a33; }
+
     footer {
-      background: var(--pine-deep);
-      color: rgba(255, 255, 255, 0.78);
-      padding: 2.25rem 0;
-      font-size: 0.9rem;
-      text-align: center;
+      text-align: center; padding: 1.75rem 1rem 2.25rem;
+      color: var(--muted); font-size: 0.9rem;
+      background: var(--white); border-top: 1px solid rgba(31,52,41,0.06);
     }
-    footer a { color: #bcd4dc; }
-    footer p { margin: 0.35rem 0; }
-    footer span { display: block; margin-top: 0.75rem; opacity: 0.75; font-size: 0.82rem; }
+    footer p { margin: 0 0 0.45rem; }
+    footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.15em; }
+    footer a:hover { color: var(--ink); }
+    [hidden] { display: none !important; }
   </style>
 </head>
 <body>
