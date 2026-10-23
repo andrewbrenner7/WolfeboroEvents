@@ -1,6 +1,47 @@
-/* Optional events-email signup on guide and events pages (list=oaks).
+/* Optional events-email signup on guide, events, and join pages.
    Same checks as the home page form: honeypot, timing, Turnstile. */
 (function () {
+  var UTM_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+  function captureUtmParams() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var src = (params.get('utm_source') || '').trim().toLowerCase();
+      if (/^[a-z0-9_-]{1,25}$/.test(src)) {
+        try { sessionStorage.setItem('sc_utm_source', src); } catch (e1) {}
+        try { localStorage.setItem('sc_utm_source_30d', JSON.stringify({ value: src, ts: Date.now() })); } catch (e2) {}
+      }
+      ['utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) {
+        var v = (params.get(k) || '').trim().toLowerCase();
+        if (/^[a-z0-9_-]{1,40}$/.test(v)) {
+          try { sessionStorage.setItem('sc_' + k, v); } catch (e3) {}
+        }
+      });
+    } catch (e) {}
+  }
+  function getStoredUtmSource() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var fromUrl = (params.get('utm_source') || '').trim().toLowerCase();
+      if (/^[a-z0-9_-]{1,25}$/.test(fromUrl)) return fromUrl;
+    } catch (e1) {}
+    try {
+      var fromSess = (sessionStorage.getItem('sc_utm_source') || '').trim().toLowerCase();
+      if (/^[a-z0-9_-]{1,25}$/.test(fromSess)) return fromSess;
+    } catch (e2) {}
+    try {
+      var raw = localStorage.getItem('sc_utm_source_30d');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed && parsed.value && parsed.ts && (Date.now() - Number(parsed.ts) <= UTM_TTL_MS)) {
+          var fromLocal = String(parsed.value).trim().toLowerCase();
+          if (/^[a-z0-9_-]{1,25}$/.test(fromLocal)) return fromLocal;
+        }
+      }
+    } catch (e3) {}
+    return '';
+  }
+  captureUtmParams();
+
   var form = document.getElementById('signup-form');
   if (!form) return;
   var statusEl = document.getElementById('signup-status');
@@ -30,18 +71,23 @@
     submitBtn.textContent = 'Joining...';
     statusEl.hidden = true;
     var page = (form.page && form.page.value) || window.location.pathname;
-    var sourcePage = (form.source_page && form.source_page.value) || '';
+    var sourcePage = ((form.source_page && form.source_page.value) || '').trim().toLowerCase();
+    var listName = (form.list && form.list.value) || 'oaks';
+    var storedUtm = getStoredUtmSource();
+    storedUtm = /^[a-z0-9_-]{1,25}$/.test(storedUtm) ? storedUtm : '';
+    var effectiveSourcePage = storedUtm ? (storedUtm + '_' + (sourcePage || 'page')).slice(0, 40) : (sourcePage || page);
+    var effectiveSource = (storedUtm === 'sign' || storedUtm === 'qr' || storedUtm === 'flyer') ? 'flyer_qr' : (storedUtm || 'website');
     if (typeof gtag === 'function') {
-      gtag('event', 'generate_lead', { property: 'oaks', method: 'native_form', lead_source: 'website', page: page, source_page: sourcePage || page });
+      gtag('event', 'generate_lead', { property: listName, method: 'native_form', lead_source: storedUtm || 'website', page: page, source_page: effectiveSourcePage });
     }
     fetch('/.netlify/functions/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email: email,
-        list: 'oaks',
-        source: 'website',
-        source_page: sourcePage,
+        list: listName,
+        source: effectiveSource,
+        source_page: effectiveSourcePage,
         page: page,
         website: website,
         ts: form.ts ? form.ts.value : '',
