@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:castle-in-the-clouds-season-end-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261026
+SUMMARY:Last weekend of the season at Castle in the Clouds
+LOCATION:Castle in the Clouds\, Moultonborough\, NH
+DESCRIPTION:The regular season ends October 25. The trails stay open after 
+ that\, but the trolley\, ticket window and restaurant close.\nDetails: htt
+ ps://www.castleintheclouds.org/hours-admission/\nDate checked 2026-10-13. 
+ Check the organizer's page before you go.
+URL:https://www.castleintheclouds.org/hours-admission/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

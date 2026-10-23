@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abenaki-opening-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Tentative: Abenaki Ski Area opening day
+LOCATION:Abenaki Ski Area\, Pine Hill Rd\, Wolfeboro\, NH
+DESCRIPTION:For a quick local run\, the town ski hill about 5 minutes away 
+ hopes to open around December 26\, weather permitting.\nDetails: https://w
+ ww.wolfeboronh.us/251/Hours-Tickets-Passes\nDate checked 2026-10-13. Check
+  the organizer's page before you go.
+URL:https://www.wolfeboronh.us/251/Hours-Tickets-Passes
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

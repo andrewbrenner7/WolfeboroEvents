@@ -1,0 +1,8 @@
+{
+  "name": "site-signup-function",
+  "private": true,
+  "description": "Dependencies for netlify/functions/subscribe.js (per-IP rate limiting via Netlify Blobs).",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

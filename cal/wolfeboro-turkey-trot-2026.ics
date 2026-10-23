@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wolfeboro-turkey-trot-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:34th Annual Turkey Trot
+LOCATION:Railroad Depot\, Railroad Ave (start and finish)\, Wolfeboro\, NH
+DESCRIPTION:Wolfeboro Parks and Rec's Thanksgiving 5K\, with a kids' run to
+ o. Work up an appetite.\nDetails: https://www.wolfeboronh.us/303/Annual-Tu
+ rkey-Trot-5K\nDate checked 2026-10-16. Check the organizer's page before y
+ ou go.
+URL:https://www.wolfeboronh.us/303/Annual-Turkey-Trot-5K
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

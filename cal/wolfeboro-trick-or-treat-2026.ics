@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wolfeboro-trick-or-treat-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Trick or Treat at Clark Park
+LOCATION:Clark Park (Clark Museum\, 233 South Main St)\, Wolfeboro\, NH
+DESCRIPTION:The Lions Club's Halloween trick-or-treat event.\nDetails: http
+ s://www.wolfeborochamber.com/events\nDate checked 2026-10-13. Check the or
+ ganizer's page before you go.
+URL:https://www.wolfeborochamber.com/events
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

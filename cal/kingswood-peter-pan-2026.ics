@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kingswood-peter-pan-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:Kingswood Theater presents Peter Pan
+LOCATION:Kingswood Arts Center\, 396 South Main St\, Wolfeboro\, NH
+DESCRIPTION:A family musical put on by Kingswood Theater.\nDetails: https:/
+ /www.wolfeborochamber.com/events/kingswood-theater-presents-peter-pan-2-di
+ fferent-start-times\nDate checked 2026-10-13. Check the organizer's page b
+ efore you go.
+URL:https://www.wolfeborochamber.com/events/kingswood-theater-presents-pete
+ r-pan-2-different-start-times
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

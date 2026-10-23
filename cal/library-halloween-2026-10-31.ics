@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:library-halloween-2026-10-31@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;TZID=America/New_York:20261031T170000
+DTEND;TZID=America/New_York:20261031T190000
+SUMMARY:Celebrate Halloween at the Library
+LOCATION:Wolfeboro Public Library\, 259 South Main St\, Wolfeboro\, NH
+DESCRIPTION:Cider and donuts\, and kids can trick or treat for books and ca
+ ndy. No registration needed.\nDetails: https://wolfeborolibrary.assabetint
+ eractive.com/calendar/celebrate-halloween-at-the-library/\nDate checked 20
+ 26-10-21. Check the organizer's page before you go.
+URL:https://wolfeborolibrary.assabetinteractive.com/calendar/celebrate-hall
+ oween-at-the-library/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:village-players-movie-psycho-2026-10-24@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Classic movie night: Psycho (Village Players)
+LOCATION:The Village Players theater\, 51 Glendon St\, Wolfeboro\, NH
+DESCRIPTION:Part of the Hollywood Firsts classic movie series\, with a shor
+ t intro before the film. Admission $7.\nDetails: https://www.village-playe
+ rs.com/movies/\nDate checked 2026-10-13. Check the organizer's page before
+  you go.
+URL:https://www.village-players.com/movies/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

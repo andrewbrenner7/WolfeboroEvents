@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:village-players-charlie-brown-christmas-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261207
+SUMMARY:A Charlie Brown Christmas (Village Players)
+LOCATION:The Village Players theater\, 51 Glendon St\, Wolfeboro\, NH
+DESCRIPTION:A stage version of the TV special. Tickets go on sale in late O
+ ctober.\nDetails: https://www.village-players.com/a-charlie-brown-christma
+ s/\nDate checked 2026-10-13. Check the organizer's page before you go.
+URL:https://www.village-players.com/a-charlie-brown-christmas/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

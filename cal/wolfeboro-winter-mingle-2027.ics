@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wolfeboro-winter-mingle-2027@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:2nd Annual Winter Mingle (Wolfeboro Area Chamber)
+LOCATION:The Barn at The Inn on Main\, 200 North Main St\, Wolfeboro\, NH
+DESCRIPTION:A winter get-together with food\, and everyone's invited.\nDeta
+ ils: https://www.wolfeborochamber.com/events/winter-mingle-b2lk4\nDate che
+ cked 2026-10-13. Check the organizer's page before you go.
+URL:https://www.wolfeborochamber.com/events/winter-mingle-b2lk4
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

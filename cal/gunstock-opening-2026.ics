@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gunstock-opening-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Tentative: Gunstock Mountain Resort opening day
+LOCATION:Gunstock Mountain Resort\, 719 Cherry Valley Rd\, Gilford\, NH
+DESCRIPTION:The Lakes Region's big mountain\, about 35 minutes from the hou
+ se\, plans to start its season the first Friday in December\, weather perm
+ itting.\nDetails: https://www.gunstock.com/discover/hours-of-operation/ope
+ ration-hours/\nDate checked 2026-10-21. Check the organizer's page before 
+ you go.
+URL:https://www.gunstock.com/discover/hours-of-operation/operation-hours/
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

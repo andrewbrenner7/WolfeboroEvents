@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:village-players-movie-last-starfighter-2027-02-20@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Classic movie night: The Last Starfighter (Village Players)
+LOCATION:The Village Players theater\, 51 Glendon St\, Wolfeboro\, NH
+DESCRIPTION:Part of the Hollywood Firsts classic movie series. Admission $7
+ .\nDetails: https://www.village-players.com/movies/\nDate checked 2026-10-
+ 13. Check the organizer's page before you go.
+URL:https://www.village-players.com/movies/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

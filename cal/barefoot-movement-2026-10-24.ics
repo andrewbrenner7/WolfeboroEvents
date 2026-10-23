@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:barefoot-movement-2026-10-24@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;TZID=America/New_York:20261024T190000
+DTEND;TZID=America/New_York:20261024T210000
+SUMMARY:The Barefoot Movement and Cold Chocolate (Wolfeboro Friends of Musi
+ c)
+LOCATION:Anderson Hall\, Brewster Academy\, Wolfeboro\, NH
+DESCRIPTION:A double bill.\nDetails: https://www.wolfeborofriendsofmusic.or
+ g/barefoot-movement-and-cold-chocolate\nDate checked 2026-10-21. Check the
+  organizer's page before you go.
+URL:https://www.wolfeborofriendsofmusic.org/barefoot-movement-and-cold-choc
+ olate
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

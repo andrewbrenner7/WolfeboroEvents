@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:christmas-in-wolfeboro-parade-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Christmas in Wolfeboro Parade and Community Tree Lighting
+LOCATION:Main Street\, Brewster Academy north to Mill St\, Wolfeboro\, NH
+DESCRIPTION:Santa and Mrs. Claus ride in the parade and light the town tree
+ .\nDetails: https://www.wolfeborochamber.com/events/christmas-in-wolfeboro
+ -parade-1-yz83w-734sm\nDate checked 2026-10-13. Check the organizer's page
+  before you go.
+URL:https://www.wolfeborochamber.com/events/christmas-in-wolfeboro-parade-1
+ -yz83w-734sm
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wolfeboroevents.com//events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wright-museum-season-end-2026@wolfeboroevents.com
+DTSTAMP:20261023T124822Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Last day of the season at the Wright Museum
+LOCATION:Wright Museum of World War II\, 77 Center St\, Wolfeboro\, NH
+DESCRIPTION:Last chance this year. The museum's season runs May 1 to Octobe
+ r 31.\nDetails: https://wrightmuseum.org/visit/\nDate checked 2026-10-13. 
+ Check the organizer's page before you go.
+URL:https://wrightmuseum.org/visit/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
