@@ -541,6 +541,8 @@ def build(cfg, today, stamp):
     checked = dt.date.fromisoformat(str(data["last_checked"]))
 
     # ----- Plan ahead -----
+    # STANDING RULE from Andrew (2026-10-25): Plan ahead is ordered by each event's next occurrence from the build date (posted date if still ahead, else the typical date phrase, rolled to next year after its end date).
+    # Do not change this ordering without his OK. Checked by scripts/test_plan_ahead_order.py.
     # Soonest next occurrence first, computed from the build date (posted date if
     # one is still ahead, else the typical date rolled forward). Nightly rebuilds
     # keep the order current.
@@ -722,6 +724,8 @@ def build(cfg, today, stamp):
     for (y, m) in months:
         mid = "m-%04d-%02d" % (y, m)
         month_rows = rows.get((y, m), [])
+        # STANDING RULE from Andrew (2026-10-25): ongoing recurring events sort and badge by their next meeting date, so every month is in badge-date order.
+        # Do not change this ordering without his OK. Checked by scripts/test_events_sort.py.
         # Soonest first by the date on the badge. Ongoing weekly events carry their
         # next meeting date. Other running events count as today and go after
         # items dated today. Past events are dropped above.
