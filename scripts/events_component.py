@@ -384,6 +384,29 @@ def cal_links_html(ics_href, gurl, title):
 
 # ---------- page ----------
 
+_WDN = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+
+def recur_weekdays(text):
+    """Weekdays named in plural form ("Tuesdays and Thursdays"), as 0..6."""
+    t = (text or "").lower()
+    return {i for i, n in enumerate(_WDN) if re.search(r"\b%ss\b" % n, t)}
+
+
+def next_recurring(ev, today):
+    """Next meeting date of an ongoing weekly event (start..end), else None."""
+    wds = recur_weekdays(ev.get("recurrence"))
+    if not wds:
+        return None
+    s, e = dt.date.fromisoformat(str(ev["start"])), dt.date.fromisoformat(str(ev["end"]))
+    d = max(s, today)
+    while d <= e:
+        if d.weekday() in wds:
+            return d
+        d += dt.timedelta(days=1)
+    return None
+
+
 def month_key(d):
     return (d.year, d.month)
 
@@ -464,8 +487,13 @@ def build(cfg, today, stamp):
         else:
             if e < today:
                 continue
-            ym = month_key(max(s, today))
-            placements = [(ym, s, e, None)]
+            nxt = next_recurring(ev, today) if s < today else None
+            if nxt:
+                # Ongoing weekly event: badge and sort use the next meeting date.
+                placements = [(month_key(nxt), nxt, e, None)]
+            else:
+                placements = [(month_key(max(s, today)), s, e, None)]
+            ym = placements[0][0]
             last = e
         if status == "canceled" and placements[0][0] < month_key(today):
             continue
@@ -512,7 +540,7 @@ def build(cfg, today, stamp):
                           '<span class="ev-d">%d</span><span class="ev-wd">%s</span></time>%s</div>'
                           % (show_s.isoformat(), ABBR[show_s.month - 1], show_s.day, WD[show_s.weekday()], to))
             tags = ['<span class="ev-cat">%s</span>' % GROUP_LABEL[g]]
-            if show_s < today and not mo:
+            if s < today and not mo:
                 tags.append('<span class="ev-status">Running now</span>')
             if status == "tentative":
                 tags.append('<span class="ev-status">Tentative</span>')
@@ -585,13 +613,12 @@ def build(cfg, today, stamp):
     for (y, m) in months:
         mid = "m-%04d-%02d" % (y, m)
         month_rows = rows.get((y, m), [])
-        # Soonest first. Events already running (started before the build date) go
-        # below every upcoming dated item in the month, so a dated event such as a
-        # ski opening always leads. Past events never get here: anything whose end
-        # date (or last occurrence) is before the build date is dropped above.
+        # Soonest first by the date on the badge. Ongoing weekly events carry their
+        # next meeting date. Other running events count as today and go after
+        # items dated today. Past events are dropped above.
         def sort_key(k):
             show_s, tier, title = k
-            return (1 if show_s < today else 0, show_s, tier, title)
+            return (max(show_s, today), 1 if show_s < today else 0, tier, title)
         items = [r for _, r in sorted(month_rows, key=lambda x: sort_key(x[0]))]
         n = len(items)
         label = ABBR[m - 1] + (" %d" % y if prev_year is not None and y != prev_year else "")
