@@ -407,6 +407,118 @@ def next_recurring(ev, today):
     return None
 
 
+_MON = {n: i + 1 for i, n in enumerate(["january", "february", "march", "april", "may", "june", "july",
+                                        "august", "september", "october", "november", "december"])}
+_QUAL_DAY = {"early": 5, "mid": 15, "late": 25}
+_ORD = {"first": 1, "second": 2, "third": 3, "fourth": 4, "last": -1}
+
+
+def _nth_wd(y, m, wd, n):
+    """n-th weekday wd (0=Mon) of month m; n=-1 for the last one."""
+    if n > 0:
+        d = dt.date(y, m, 1)
+        d += dt.timedelta(days=(wd - d.weekday()) % 7)
+        return d + dt.timedelta(weeks=n - 1)
+    d = dt.date(y + (m == 12), m % 12 + 1, 1) - dt.timedelta(days=1)
+    return d - dt.timedelta(days=(d.weekday() - wd) % 7)
+
+
+def _holiday(text, y):
+    """(start, end) for holiday phrases in text, or None."""
+    t = text.lower()
+    if "columbus day" in t or "indigenous peoples" in t:
+        mon = _nth_wd(y, 10, 0, 2)
+        return (mon - dt.timedelta(days=2), mon) if "weekend" in t else (mon, mon)
+    if "thanksgiving" in t:
+        th = _nth_wd(y, 11, 3, 4)
+        if "saturday after" in t:
+            return (th + dt.timedelta(days=2),) * 2
+        return (th, th)
+    if "memorial day" in t:
+        mon = _nth_wd(y, 5, 0, -1)
+        return (mon - dt.timedelta(days=2), mon) if "weekend" in t else (mon, mon)
+    return None
+
+
+def _labor_day(y):
+    return _nth_wd(y, 9, 0, 1)
+
+
+def typical_range(text, y):
+    """Best-guess (start, end) in year y from a phrase like 'late May', 'early February,
+    3 days', 'July to early September', 'second weekend of August'. None if no clue."""
+    t = (text or "").lower()
+    h = _holiday(t, y)
+    if h:
+        return h
+    m = re.search(r"\b(first|second|third|fourth|last) weekend (?:of|in) (\w+)", t)
+    if m and m.group(2) in _MON:
+        sat = _nth_wd(y, _MON[m.group(2)], 5, _ORD[m.group(1)])
+        return sat - dt.timedelta(days=1), sat + dt.timedelta(days=1)
+    # month mentions, each with an optional early/mid/late qualifier
+    pts = []
+    for mm in re.finditer(r"\b(?:(early|mid|late)[- ])?(%s)\b" % "|".join(_MON), t):
+        q, mon = mm.group(1), _MON[mm.group(2)]
+        pts.append((q, mon, mm.start()))
+    if "labor day" in t:
+        pts.append(("labor", 9, t.index("labor day")))
+    pts.sort(key=lambda x: x[2])
+    if not pts:
+        if "summer" in t:
+            return dt.date(y, 6, 21), _labor_day(y)
+        if "spring" in t:
+            return dt.date(y, 3, 20), dt.date(y, 6, 20)
+        return None
+
+    def pt(q, mon, end):
+        if q == "labor":
+            return _labor_day(y)
+        if q:
+            return dt.date(y, mon, _QUAL_DAY[q])
+        if end:  # month only, as an end: last day of the month
+            return dt.date(y + (mon == 12), mon % 12 + 1, 1) - dt.timedelta(days=1)
+        return dt.date(y, mon, 1)
+    q, mon, _ = pts[0]
+    start = pt(q, mon, False)
+    if len(pts) > 1 and re.search(r"\bto\b|through|-", t[pts[0][2]:pts[1][2]]):
+        end = pt(pts[1][0], pts[1][1], True)
+    else:
+        nd = re.search(r"(\d+) days", t)
+        if nd:
+            end = start + dt.timedelta(days=int(nd.group(1)) - 1)
+        elif q is None and "saturday" not in t:
+            end = pt(None, mon, True)   # month only: the whole month
+        else:
+            end = start
+    if end < start:
+        end = end.replace(year=end.year + 1)
+    return start, end
+
+
+def annual_next(a, today):
+    """(next start, next end, source) for an annual event, as of today.
+    Posted dates win if any posted segment has not ended; otherwise the typical
+    date, rolled to next year once it has passed."""
+    segs = []
+    for part in str(a.get("next_confirmed", "")).split(";"):
+        ds = re.findall(r"\d{4}-\d{2}-\d{2}", part)
+        if ds:
+            segs.append((dt.date.fromisoformat(ds[0]), dt.date.fromisoformat(ds[-1])))
+    if a.get("next_start"):
+        s0 = dt.date.fromisoformat(str(a["next_start"]))
+        segs.append((s0, dt.date.fromisoformat(str(a.get("next_end") or s0))))
+    live = sorted(x for x in segs if x[1] >= today)
+    if live:
+        return live[0][0], live[0][1], "posted"
+    for y in (today.year, today.year + 1, today.year + 2):
+        r = typical_range(a.get("typical", ""), y)
+        if r is None:
+            break
+        if r[1] >= today:
+            return r[0], r[1], "typical"
+    return dt.date.max, dt.date.max, "unknown"
+
+
 def month_key(d):
     return (d.year, d.month)
 
@@ -429,13 +541,10 @@ def build(cfg, today, stamp):
     checked = dt.date.fromisoformat(str(data["last_checked"]))
 
     # ----- Plan ahead -----
-    def first_date(a):
-        if a.get("next_start"):
-            return str(a["next_start"])
-        m = re.search(r"\d{4}-\d{2}-\d{2}", str(a.get("next_confirmed", "")))
-        return m.group(0) if m else "9999"
-
-    annual = sorted(data.get("annual", []), key=lambda a: (a.get("tier", 9), first_date(a), a["title"]))
+    # Soonest next occurrence first, computed from the build date (posted date if
+    # one is still ahead, else the typical date rolled forward). Nightly rebuilds
+    # keep the order current.
+    annual = sorted(data.get("annual", []), key=lambda a: (annual_next(a, today)[:2], a["title"]))
     cards = []
     for i, a in enumerate(annual):
         nxt = str(a.get("next_confirmed", "")).strip()
@@ -455,8 +564,8 @@ def build(cfg, today, stamp):
                    % cal_links_html(base + "cal/" + aid + ".ics", google_link(pseudo, site, today), a["title"]))
         note = (" " + E(a["title_note"])) if a.get("title_note") else ""
         cls = ' class="ev-more"' if i >= 6 else ""
-        cards.append('<li%s><h3><a href="%s">%s</a>%s</h3><p class="ev-typ">%s</p>%s%s</li>' % (
-            cls, E(a["source_url"]), E(a["title"]), note, E(a.get("typical", "")), next_html, add))
+        cards.append('<li%s data-next="%s"><h3><a href="%s">%s</a>%s</h3><p class="ev-typ">%s</p>%s%s</li>' % (
+            cls, annual_next(a, today)[0].isoformat(), E(a["source_url"]), E(a["title"]), note, E(a.get("typical", "")), next_html, add))
     extra = len(annual) - 6
     more = ('<details class="ev-showmore"><summary>Show %d more annual event%s</summary></details>' % (extra, "" if extra == 1 else "s")
             if extra > 0 else "")
