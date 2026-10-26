@@ -1,6 +1,12 @@
 {
   "_comment": "Shared top nav across wolfeboroevents.com. Run python3 scripts/site_nav.py after events_component.py.",
-  "houses": [],
+  "_comment_houses": "'The Oaks' is the first menu link. When the hub launches, change it to label 'Places to stay' with href https://wolfeborostays.com/.",
+  "houses": [
+    {
+      "label": "The Oaks",
+      "href": "https://wolfeborooaks.com/"
+    }
+  ],
   "links": [
     {
       "label": "Events",
