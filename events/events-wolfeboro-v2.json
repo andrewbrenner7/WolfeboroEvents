@@ -1,7 +1,7 @@
 {
  "region": "wolfeboro",
  "page_url": "https://wolfeboroevents.com/",
- "last_checked": "2026-10-21",
+ "last_checked": "2026-10-26",
  "next_review": "2026-11-02",
  "events": [
   {
@@ -85,11 +85,11 @@
    "town": "Wolfeboro",
    "category": "family",
    "tier": 3,
-   "summary": "The Lions Club's Halloween trick-or-treat event.",
-   "url": "https://www.wolfeborochamber.com/events",
-   "source_url": "https://www.wolfeborochamber.com/events",
+   "summary": "The Lions Club's Halloween trick-or-treat at Clark Park.",
+   "url": "https://www.wolfeborochamber.com/events/outdoor-antique-amp-vintage-fair-1-s633g-wn29a-f4tbt-7db42-rbjms-y5d92-5ex32",
+   "source_url": "https://www.wolfeborochamber.com/events/outdoor-antique-amp-vintage-fair-1-s633g-wn29a-f4tbt-7db42-rbjms-y5d92-5ex32",
    "status": "confirmed",
-   "verified_on": "2026-10-13",
+   "verified_on": "2026-10-26",
    "related_links": {
     "Clark Museum": "https://www.wolfeboronh.us/298/Clark-Museum-Complex"
    }
@@ -115,17 +115,19 @@
    "title": "Dinner concert: Once An Outlaw",
    "start": "2026-10-31",
    "end": "2026-10-31",
-   "time": "Doors 5:30 p.m.",
+   "time": "5:30 to 9:30 p.m. (dinner about 5:45, music about 7)",
    "venue": "The Barn at The Inn on Main, 200 North Main St",
    "venue_url": "https://innnewhampshire.com/",
    "town": "Wolfeboro",
    "category": "music",
    "tier": 3,
-   "summary": "Dinner plus a concert. Get tickets in advance.",
+   "summary": "A buffet dinner and concert featuring Chris Hicks of the Marshall Tucker Band. Buy tickets by October 28.",
    "url": "https://www.wolfeborochamber.com/events",
    "source_url": "https://www.wolfeborochamber.com/events",
    "status": "confirmed",
-   "verified_on": "2026-10-13"
+   "verified_on": "2026-10-26",
+   "start_time": "17:30",
+   "end_time": "21:30"
   },
   {
    "id": "kingswood-peter-pan-2026",
@@ -133,7 +135,7 @@
    "start": "2026-11-20",
    "end": "2026-11-22",
    "time": "Shows at 2 p.m. and 7 p.m.",
-   "venue": "Kingswood Arts Center, 396 South Main St",
+   "venue": "Kingswood Arts Center, 21 McManus Rd",
    "venue_url": "https://www.kingswoodtheater.org/",
    "town": "Wolfeboro",
    "category": "family",
@@ -201,21 +203,30 @@
    "id": "nutcracker-wolfeboro-2026",
    "title": "The Nutcracker (Northeastern Ballet Theatre)",
    "start": "2026-11-28",
-   "end": "2026-11-28",
-   "time": "6 p.m.",
+   "end": "2026-11-29",
+   "time": "Sat Nov 28, 6 p.m.; Sun Nov 29, 2 p.m.",
    "venue": "Kingswood Arts Center, 396 South Main St",
    "venue_url": "https://www.kingswoodtheater.org/",
    "town": "Wolfeboro",
    "category": "family",
    "tier": 3,
-   "summary": "The full-length holiday ballet, Thanksgiving weekend.",
+   "summary": "The full-length holiday ballet, Thanksgiving weekend, with a Sunday matinee added. Tickets: $30 adults, $25 students and seniors, $100 family four-pack.",
    "url": "https://www.northeasternballet.org/event-details-registration/the-nutcracker-ballet-in-wolfeboro-nh-nov-28-2026",
    "source_url": "https://www.northeasternballet.org/event-details-registration/the-nutcracker-ballet-in-wolfeboro-nh-nov-28-2026",
    "status": "confirmed",
-   "verified_on": "2026-10-21",
-   "start_time": "18:00",
-   "end_time": "20:00",
-   "organizer": "Northeastern Ballet Theatre"
+   "verified_on": "2026-10-26",
+   "organizer": "Northeastern Ballet Theatre",
+   "occurrences": [
+    {
+     "date": "2026-11-28",
+     "start_time": "18:00",
+     "end_time": "20:00"
+    },
+    {
+     "date": "2026-11-29",
+     "start_time": "14:00"
+    }
+   ]
   },
   {
    "id": "wolfeboro-festival-of-trees-2026",
@@ -232,7 +243,7 @@
    "url": "https://www.wolfeborofestivaloftrees.com/aboutus",
    "source_url": "https://www.wolfeborofestivaloftrees.com/aboutus",
    "status": "confirmed",
-   "verified_on": "2026-10-16"
+   "verified_on": "2026-10-26"
   },
   {
    "id": "eileen-ivers-2026-12-12",
@@ -264,11 +275,51 @@
    "town": "Gilford",
    "category": "winter",
    "tier": 1,
-   "summary": "The Lakes Region's big mountain, about 35 minutes from the house, plans to start its season the first Friday in December, weather permitting.",
-   "url": "https://www.gunstock.com/discover/hours-of-operation/operation-hours/",
-   "source_url": "https://www.gunstock.com/discover/hours-of-operation/operation-hours/",
+   "summary": "The Lakes Region's big mountain, about 35 minutes from the house, targets Friday, December 4 to open its 90th season, weather permitting.",
+   "url": "https://www.gunstock.com/discover/?v=list&p=1&id=360",
+   "source_url": "https://www.gunstock.com/discover/events-calendar/",
    "status": "tentative",
-   "verified_on": "2026-10-21"
+   "verified_on": "2026-10-26",
+   "organizer": "Gunstock Mountain Resort"
+  },
+  {
+   "id": "gunstock-night-skiing-opening-2026",
+   "title": "Gunstock night skiing opening day (tentative)",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "time": "From 3 p.m.",
+   "start_time": "15:00",
+   "venue": "Gunstock Mountain Resort, 719 Cherry Valley Rd",
+   "venue_url": "https://www.gunstock.com/",
+   "town": "Gilford",
+   "category": "winter",
+   "tier": 1,
+   "summary": "The target first night of the season under the lights, with 25 lit trails. Night skiing then runs Tuesday to Saturday from 3 p.m.",
+   "url": "https://www.gunstock.com/discover/?v=list&p=1&id=830",
+   "source_url": "https://www.gunstock.com/discover/events-calendar/",
+   "status": "tentative",
+   "verified_on": "2026-10-26",
+   "organizer": "Gunstock Mountain Resort"
+  },
+  {
+   "id": "gunstock-santa-on-snow-2026-12-19",
+   "title": "Santa on Snow at Gunstock",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "time": "10 a.m. to noon",
+   "start_time": "10:00",
+   "end_time": "12:00",
+   "venue": "Gunstock Mountain Resort, 719 Cherry Valley Rd",
+   "venue_url": "https://www.gunstock.com/",
+   "town": "Gilford",
+   "category": "holiday",
+   "tier": 1,
+   "summary": "Santa roams the base area, the Penny lift, Penny's Playground and Panorama handing out candy canes, and ends at the Historic Lodge.",
+   "url": "https://www.gunstock.com/discover/?v=list&p=1&id=831",
+   "source_url": "https://www.gunstock.com/discover/events-calendar/",
+   "status": "confirmed",
+   "verified_on": "2026-10-26",
+   "organizer": "Gunstock Mountain Resort"
   },
   {
    "id": "abenaki-opening-2026",
@@ -284,7 +335,7 @@
    "url": "https://www.wolfeboronh.us/251/Hours-Tickets-Passes",
    "source_url": "https://www.wolfeboronh.us/251/Hours-Tickets-Passes",
    "status": "tentative",
-   "verified_on": "2026-10-13"
+   "verified_on": "2026-10-26"
   },
   {
    "id": "wolfeboro-winter-mingle-2027",
