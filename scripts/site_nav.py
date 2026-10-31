@@ -7,8 +7,7 @@ import html, json, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 cfg = json.loads((ROOT / "scripts" / "site_nav.json").read_text(encoding="utf-8"))
-# "houses" holds the first menu link, currently The Oaks (https://wolfeborooaks.com/).
-# When the hub launches it becomes "Places to stay" pointing to https://wolfeborostays.com/.
+# "houses" holds the first menu link (currently "This week", pointing to /#coming-up).
 items = cfg["houses"] + cfg["links"]
 
 for rel, here in cfg["pages"].items():
