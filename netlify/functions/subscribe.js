@@ -7,6 +7,10 @@
  */
 const LIST_GROUPS = {
   sandcastle: 'ep6n1m',
+  // Wolfeboro events list. Same Sender group the site has always used, so
+  // existing subscribers stay where they are; only the site's tag changed.
+  events: 'bqXo1k',
+  // Legacy key: cached pages or old flyers may still post list=oaks.
   oaks: 'bqXo1k',
 };
 
@@ -14,6 +18,8 @@ const LIST_GROUPS = {
 const FLYER_QR_GROUP_TITLES = {
   sandcastle: 'Flyer QR',
   oaks: 'Oaks Flyer QR',
+  // Reuse the existing tracking group so flyer counts stay in one place.
+  events: 'Oaks Flyer QR',
 };
 
 const FLYER_SOURCES = new Set(['flyer_qr', 'flyer', 'qr']);
