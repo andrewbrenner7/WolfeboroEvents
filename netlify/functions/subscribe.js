@@ -254,12 +254,12 @@ async function isRateLimited(event, ip) {
   }
 }
 
-/* Cloudflare Turnstile. Enforced only when TURNSTILE_SECRET_KEY is set. */
+/* Cloudflare Turnstile. Fails closed: no secret, bad token or verify error all reject. */
 async function verifyTurnstile(token, ip) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret) {
-    console.log(JSON.stringify({ event: 'turnstile', action: 'skipped_no_secret' }));
-    return true;
+    console.log(JSON.stringify({ event: 'turnstile', action: 'rejected_no_secret' }));
+    return false;
   }
   if (!token || typeof token !== 'string' || token.length > 2048) return false;
   try {
@@ -278,9 +278,9 @@ async function verifyTurnstile(token, ip) {
     }
     return true;
   } catch (err) {
-    // Cloudflare unreachable: fail open so real signups keep working; other checks still apply.
+    // Cloudflare unreachable or bad response: fail closed.
     console.log(JSON.stringify({ event: 'turnstile', action: 'verify_error' }));
-    return true;
+    return false;
   }
 }
 
@@ -471,6 +471,12 @@ exports.handler = async (event) => {
   }
   if (!data || typeof data !== 'object') data = {};
 
+  // 1b. Cloudflare Turnstile, before honeypot and timing so every token is verified.
+  if (!(await verifyTurnstile(data.turnstile, clientIp(event)))) {
+    logBlocked('turnstile', event);
+    return json(403, { ok: false, error: 'Verification failed' }, allowedOrigin);
+  }
+
   // 2. Honeypot: pretend success for bots, add nothing.
   if (data.website || data.company) {
     logBlocked('honeypot', event);
@@ -488,11 +494,6 @@ exports.handler = async (event) => {
   // 4. Per-IP rate limit (Netlify Blobs, with in-memory fallback).
   const ip = clientIp(event);
 
-  // 4b. Cloudflare Turnstile (skipped with a warning until the secret is configured).
-  if (!(await verifyTurnstile(data.turnstile, ip))) {
-    logBlocked('turnstile', event);
-    return json(403, { ok: false, error: 'Verification failed' }, allowedOrigin);
-  }
   if (await isRateLimited(event, ipBucket(ip))) {
     logBlocked('rate_limit', event);
     return json(429, { ok: false, error: 'Too many requests' }, allowedOrigin);
