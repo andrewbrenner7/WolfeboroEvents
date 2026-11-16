@@ -1,11 +1,11 @@
 {
   "_comment": "Outdoor things to do within about an hour of downtown Wolfeboro. Source of truth for /outdoors/ on wolfeboroevents.com (built by scripts/build_outdoors.py) and reused by wolfeborostays.com. Drive times are rough estimates from downtown Wolfeboro, rounded up. No em or en dashes.",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "title": "Outdoor Things to Do Near Wolfeboro, NH: Hikes, Lakes and Trails",
   "description": "Favorite hikes, beaches, paddling, trails and winter fun within about an hour of Wolfeboro, NH, with drive times from downtown and tips on parking.",
   "eyebrow": "Wolfeboro, New Hampshire · Within about an hour",
   "h1": "Outdoor things to do near Wolfeboro",
-  "intro": "Wolfeboro sits right where the lakes meet the mountains, so you can swim in the morning and stand on a summit by afternoon. Here are the hikes, beaches and trails locals love, with rough drive times from downtown Wolfeboro.",
+  "intro": "Wolfeboro sits right where the lakes meet the mountains, so a morning swim and an afternoon hike fit easily in the same day. Below are the hikes, beaches and trails we keep going back to, with rough drive times from downtown Wolfeboro.",
   "sections": [
     {
       "id": "hikes",
@@ -14,30 +14,30 @@
       "items": [
         {"name": "Abenaki Tower", "town": "Tuftonboro", "drive": "About 20 minutes",
          "stats": "About a quarter mile each way · Easy · Free, open year round",
-         "body": "The best payoff for the least effort around here. A short, gently uphill dirt path through the woods gets you to an 80 foot wooden tower, and from the top you look out over Lake Winnipesaukee and the Belknap Range. Kids love the stairs. Grandparents love that it takes ten minutes.",
+         "body": "Probably the biggest view for the least effort around here. A short, gently uphill dirt path through the woods gets you to an 80 foot wooden tower, and from the top you look out over Lake Winnipesaukee and the Belknap Range. Kids love the stairs, and the whole walk only takes about ten minutes.",
          "tip": "The signed lot is on Route 109 between Melvin Village and 19 Mile Bay, across from Wawbeek Road. The top stairs are steep, so hold the rail.",
          "source": ["Abenaki Tower", "https://abenakitower.org/visit-the-tower/"]},
-        {"name": "Copple Crown Mountain", "town": "Brookfield", "drive": "About 20 minutes",
+        {"name": "Copple Crown Mountain", "town": "Brookfield", "drive": "About 30 minutes",
          "stats": "2.8 miles to the summit (about 5.6 round trip) · Moderate · Summit 1,868 ft",
          "body": "A quiet one. The trail follows old town roads and logging roads through hardwoods, then switchbacks up through spruce for the last half mile. From the top you can pick out Winnipesaukee and Lake Wentworth, plus the Belknaps, the Ossipees and the Sandwich Range.",
          "tip": "Parking holds only three or four cars at the end of Hanson Road, and the road isn't plowed in winter, so there's no parking then. Go in from Brookfield, not New Durham.",
          "source": ["Lakes Region Conservation Trust", "https://lrct.org/property/copple-crown-conservation-area-brookfield"]},
         {"name": "Mount Major", "town": "Alton", "drive": "About 30 minutes",
          "stats": "Main Trail 1.5 miles each way · About 1,150 ft of climbing · Moderate · No parking fee",
-         "body": "The Lakes Region classic, and for good reason. The open summit at 1,786 feet gives you the big view straight up Lake Winnipesaukee with the White Mountains behind it. The blue Main Trail is the shortest way up and finishes on steep granite ledges. The yellow Brook Trail is gentler and makes a nice way down, about 3.9 miles for the loop.",
+         "body": "Probably the best known hike in the Lakes Region. The open summit at 1,786 feet gives you the big view straight up Lake Winnipesaukee with the White Mountains behind it. The blue Main Trail is the shortest way up and finishes on steep granite ledges. The yellow Brook Trail is gentler and makes a nice way down, about 3.9 miles for the loop.",
          "tip": "The lot on Route 11, about 4 miles north of Alton Bay, fills early on summer weekends and foliage days. Go early or on a weekday. The upper ledges are slick when wet or icy.",
          "source": ["Forest Society", "https://www.forestsociety.org/property/mount-major-reservation"]},
         {"name": "Mount Roberts at Castle in the Clouds", "town": "Moultonborough", "drive": "About 40 minutes",
          "stats": "2.5 miles each way · About 1,360 ft of climbing · Plan on 3 to 4 hours · Summit 2,582 ft",
-         "body": "A favorite half day with real views. The trail climbs steadily from Shannon Pond, then opens onto granite ledges that look down over Winnipesaukee and the Belknaps, with the southern White Mountains from up top. The same 5,000 plus acre conservation area has around 30 miles of trails, including the Brook Walk past seven waterfalls, the biggest a 40 foot plunge called the Falls of Song.",
+         "body": "A good half day hike with big views. The trail climbs steadily from Shannon Pond, then opens onto granite ledges that look down over Winnipesaukee and the Belknaps, with the southern White Mountains from up top. The same 5,000 plus acre conservation area has around 30 miles of trails, including the Brook Walk past seven waterfalls, the biggest a 40 foot plunge called the Falls of Song.",
          "tip": "Trails are open year round during daylight hours. Bald Knob, in the same area, is another family favorite with views of Winnipesaukee.",
          "source": ["Lakes Region Conservation Trust", "https://lrct.org/property/castle-in-the-clouds"]},
-        {"name": "Red Hill Fire Tower", "town": "Moultonborough", "drive": "About 55 minutes",
+        {"name": "Red Hill Fire Tower", "town": "Moultonborough", "drive": "About 45 to 50 minutes",
          "stats": "1.7 miles to the summit · About 1,290 ft of climbing · Moderate · Free",
-         "body": "A wide, well kept trail up to a fire tower with one of the best views in the region: Squam Lake on one side, Winnipesaukee on the other, and the Ossipee, Sandwich and White Mountain ranges all around. You pass the old Horne family homestead on the way. Come back down the Cabin Trail for a loop of about 3.6 miles.",
+         "body": "A wide, well kept trail up to a fire tower with one of the best views in the region. You see Squam Lake on one side and Winnipesaukee on the other, with the Ossipee, Sandwich and White Mountain ranges all around. You pass the old Horne family homestead on the way. Come back down the Cabin Trail for a loop of about 3.6 miles.",
          "tip": "Trailhead parking is on Red Hill Road. From the lights in Center Harbor, take Bean Road 1.5 miles, turn right on Sibley Road, then bear left onto Red Hill Road.",
          "source": ["Lakes Region Conservation Trust", "https://lrct.org/property/red-hill-conservation-area"]},
-        {"name": "Mount Chocorua by the Piper Trail", "town": "Albany", "drive": "About 55 minutes",
+        {"name": "Mount Chocorua by the Piper Trail", "town": "Albany", "drive": "About 50 minutes",
          "stats": "4.3 miles each way · About 2,700 ft of climbing · Challenging · Summit 3,500 ft",
          "body": "If you want a real White Mountains day, Chocorua is within reach. It's a long, steady climb to a bare rocky summit with views in every direction, and the Piper Trail starts right off Route 16 on the south side of the mountains. Pack a lunch and give yourself the whole day.",
          "tip": "The lot is a large dirt area off Route 16 behind Davies General Store. There are no restrooms or water at the trailhead.",
@@ -49,7 +49,7 @@
          "source": ["Belknap Range Trail Tenders", "https://belknaprangetrails.org/wp-content/uploads/2014/02/Blue-Green-Red-Trails-FINAL.pdf"]},
         {"name": "West Rattlesnake", "town": "Holderness", "drive": "A little over an hour",
          "stats": "Old Bridle Path, about 0.9 miles each way · Roughly 400 ft of climbing · Easy",
-         "body": "Short, sweet and right above Squam Lake. It's an easy climb to rocky ledges that look out over the islands. A great one to pair with lunch in Holderness or Center Harbor on the way home.",
+         "body": "A short climb right above Squam Lake. It's an easy climb to rocky ledges that look out over the islands. It's easy to pair with lunch in Holderness or Center Harbor afterward.",
          "tip": "The small lot on Route 113 fills quickly, so get there early.",
          "source": ["AllTrails", "https://www.alltrails.com/trail/us/new-hampshire/old-bridle-path--3"]}
       ]
@@ -68,11 +68,11 @@
          "tip": "In season it's $4 for adults and $2 for kids 6 to 11, and kids 5 and under get in free. Parking is limited on nice weekends, so you can reserve ahead on the NH State Parks site.",
          "source": ["NH State Parks", "https://www.nhstateparks.org/find-parks-trails/wentworth-state-park/"]},
         {"name": "Kayaks and paddleboards", "drive": "Downtown",
-         "body": "Wolfeboro Bay is a lovely place to paddle on a calm morning, and Lake Wentworth is a quieter option. Dive Winnipesaukee on North Main Street rents kayaks, canoes and paddleboards by the hour, day or week, with paddles and life jackets included.",
-         "tip": "Call ahead in summer to make sure boats are available: 603 569 8080.",
+         "body": "Wolfeboro Bay is a nice paddle on a calm morning, and Lake Wentworth is a quieter option. Dive Winnipesaukee on North Main Street rents kayaks, canoes and paddleboards by the hour, day or week, with paddles and life jackets included.",
+         "tip": "In summer, call ahead at 603-569-8080 to make sure boats are available.",
          "source": ["Dive Winnipesaukee", "https://divewinnipesaukee.com/watersports-rentals"]},
         {"name": "A cruise on the Mount Washington", "drive": "Downtown docks",
-         "body": "If you'd rather let someone else do the steering, the M/S Mount Washington sails from the Wolfeboro docks in summer, run by a company whose history on the lake goes back to 1872. It's a relaxed way to see the big lake, the islands and the mountains from the water.",
+         "body": "If you'd rather let someone else do the steering, the M/S Mount Washington sails from the Wolfeboro docks in summer, and boats from the same line have been on the lake since 1872. It's a relaxed way to see the big lake, the islands and the mountains from the water.",
          "tip": "The Wolfeboro dock is at 11 Dockside Street. Schedules change each season, so check before you go.",
          "source": ["Mount Washington Cruises", "https://cruisenh.com/pages/our-ports"]}
       ]
@@ -80,14 +80,14 @@
     {
       "id": "trails",
       "title": "Walk, bike and wander",
-      "lede": "Two trail systems you can reach without really getting in the car.",
+      "lede": "Two trail systems right near downtown.",
       "items": [
         {"name": "Cotton Valley Rail Trail", "drive": "Starts downtown",
          "body": "Twelve miles of hard packed trail on the old railroad bed from downtown Wolfeboro through Brookfield to Sanbornville. It runs along two lakes, over old trestles, past wetlands and fields, and it's mostly easy going with some hills. Walk a mile out and back after breakfast or bike the whole thing.",
          "tip": "Dogs need to be leashed. Bikes yield to walkers, and everyone yields to the rail cars.",
          "source": ["Cotton Valley Rail Trail", "https://cottonvalleyrailtrail.org/trail-overview/"]},
         {"name": "Sewall Woods", "drive": "About 5 minutes",
-         "body": "179 acres of woods just off Main Street, linked with the town's Abenaki trail network for more than 18 miles of trails. Easy hiking in summer, about 5 miles of beginner to intermediate mountain bike singletrack in spring, summer and fall, and cross country skiing and snowshoeing in winter.",
+         "body": "179 acres of woods just off Main Street, linked with the town's Abenaki trail network for more than 18 miles of trails. Easy hiking in summer, about 5 miles of beginner to intermediate mountain bike singletrack and doubletrack in spring, summer and fall, and cross country skiing and snowshoeing in winter.",
          "tip": "Park at the end of Clow Road. Dogs must be leashed. No biking in winter or when the trails are muddy.",
          "source": ["Lakes Region Conservation Trust", "https://lrct.org/property/sewall-woods"]}
       ]
@@ -95,22 +95,22 @@
     {
       "id": "winter",
       "title": "Winter outside",
-      "lede": "Wolfeboro doesn't hibernate. When the snow comes, here's where to go.",
+      "lede": "Winter's a good time to be outside here too. Here's where to go once the snow comes.",
       "items": [
         {"name": "Abenaki Ski Area", "drive": "About 10 minutes",
          "body": "Wolfeboro's own little ski hill on Pine Hill Road, with a rope tow, a kiddie tow and some of the most affordable skiing anywhere. It's where a lot of local kids learn, and it's a fun, low key outing for the whole family.",
-         "tip": "For 2026 to 2027 it's set to open December 26, weather permitting. Open Wednesday to Friday 4 to 7 pm and weekends from 11 am. Nonresident day passes are $20 on weekdays and $30 on weekends and holidays. Bring tow gloves.",
+         "tip": "For 2026 to 2027 it's set to open December 26, weather permitting. Open Wednesday to Friday 4 to 7 pm, Saturday 11 am to 7 pm and Sunday 11 am to 6 pm. Nonresident day passes are $20 on weekdays and $30 on weekends and holidays. Bring tow gloves.",
          "source": ["Town of Wolfeboro", "https://www.wolfeboronh.us/251/Hours-Tickets-Passes"]},
-        {"name": "Gunstock Mountain Resort", "drive": "About 45 minutes",
-         "body": "The big mountain in the Belknaps: 44 trails plus glades, a 1,340 foot vertical, night skiing, tubing and groomed cross country trails. In summer it turns into a mountain coaster and ziplines day.",
-         "tip": "Night skiing runs on 25 trails, so you can fit in a few runs after a day on the lake.",
+        {"name": "Gunstock Mountain Resort", "drive": "About 40 minutes",
+         "body": "The big mountain in the Belknaps: 44 trails plus glades, a 1,340 foot vertical, night skiing, tubing and groomed cross country trails. In summer there's a mountain coaster and ziplines.",
+         "tip": "Night skiing runs on 25 trails, so you can get a few runs in after work or dinner.",
          "source": ["Gunstock", "https://www.gunstock.com/about-us/resort-stats/"]},
         {"name": "Cross country skiing at Sewall Woods", "drive": "About 5 minutes",
          "body": "The Wolfeboro Cross Country Ski Association grooms trails right in town, so you can be on skis ten minutes after your coffee. Ungroomed trails are open for snowshoeing.",
          "tip": "A trail pass is required for the groomed trails. Check the association's website for passes and grooming reports.",
          "source": ["Wolfeboro XC Ski Association", "https://www.wolfeboroxc.org/"]},
         {"name": "Ice fishing and winter hikes", "drive": "Close by",
-         "body": "When the lakes freeze, the shanties come out. Brewster Beach keeps its lot plowed for winter access to the ice. Mount Major and Mount Roberts are both popular snowshoe hikes, and the Abenaki Tower is lovely in the snow.",
+         "body": "When the lakes freeze, the shanties come out. Brewster Beach keeps its lot plowed for winter access to the ice. Mount Major and Mount Roberts are both popular snowshoe hikes, and the Abenaki Tower is a pretty short walk in the snow.",
          "tip": "Only go out on ice you know is safe, and bring microspikes for the ledges on Major.",
          "source": ["Town of Wolfeboro", "https://www.wolfeboronh.us/Facilities/Facility/Details/Brewster-Beach-8"]}
       ]
@@ -124,5 +124,5 @@
     "Granite ledges get slick when wet or icy. Bring traction for winter hikes and an extra layer for windy summits.",
     "Hours, fees and schedules change. Check the linked source before you go."
   ],
-  "closing": "Pair a morning hike with something on the calendar. <a href=\"/\">See what's on in Wolfeboro</a> or browse the <a href=\"/guide/\">Town Guide</a> for food, beaches and rainy day ideas."
+  "closing": "Pair a morning hike with something on the calendar. <a href=\"/\">See what's happening in Wolfeboro</a>, or browse the <a href=\"/guide/\">Town Guide</a> for food, beaches and rainy day ideas."
 }
