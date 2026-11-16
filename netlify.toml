@@ -1,5 +1,5 @@
 [build]
-  command = "python3 scripts/events_component.py && python3 scripts/site_nav.py && python3 scripts/apply_turnstile_pages.py"
+  command = "python3 scripts/events_component.py && python3 scripts/build_outdoors.py && python3 scripts/site_nav.py && python3 scripts/apply_turnstile_pages.py"
   publish = "."
   functions = "netlify/functions"
 

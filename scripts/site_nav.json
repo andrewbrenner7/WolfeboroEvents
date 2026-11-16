@@ -17,6 +17,10 @@
       "href": "/guide/"
     },
     {
+      "label": "Outdoors",
+      "href": "/outdoors/"
+    },
+    {
       "label": "Join the list",
       "href": "/join/"
     }
@@ -24,6 +28,7 @@
   "pages": {
     "index.html": "/",
     "guide/index.html": "/guide/",
-    "join/index.html": "/join/"
+    "join/index.html": "/join/",
+    "outdoors/index.html": "/outdoors/"
   }
 }
