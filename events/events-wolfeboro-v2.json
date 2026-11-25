@@ -1,8 +1,8 @@
 {
  "region": "wolfeboro",
  "page_url": "https://wolfeboroevents.com/",
- "last_checked": "2026-11-18",
- "next_review": "2026-11-25",
+ "last_checked": "2026-11-25",
+ "next_review": "2026-12-02",
  "events": [
   {
    "id": "wolfeboro-indoor-farmers-market-2026",
@@ -754,6 +754,43 @@
    "status": "tentative",
    "verified_on": "2026-11-18",
    "organizer": "Town of Wolfeboro"
+  },
+  {
+   "id": "rock-my-soul-fccw-2026-12-20",
+   "title": "Rock My Soul: Repeat the Sounding Joy (First Congregational Church)",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "time": "4 p.m.",
+   "start_time": "16:00",
+   "venue": "First Congregational Church, 115 South Main St",
+   "venue_url": "https://www.wolfeboroucc.org/",
+   "town": "Wolfeboro",
+   "category": "music",
+   "tier": 2,
+   "summary": "The Rock My Soul choir and band, horns included, play spirituals, gospels and soulful Christmas songs. Tickets are $25, free for children under 12, and proceeds support ProjectMusicWorks and the missions of FCCW.",
+   "url": "https://www.wolfeboroucc.org/upcoming-events",
+   "source_url": "https://www.wolfeboroucc.org/upcoming-events",
+   "status": "confirmed",
+   "verified_on": "2026-11-25",
+   "organizer": "First Congregational Church of Wolfeboro"
+  },
+  {
+   "id": "gunstock-sweets-on-snow-2026",
+   "title": "Sweets on Snow at Gunstock (free cider donuts)",
+   "start": "2026-12-05",
+   "end": "2026-12-27",
+   "recurrence": "Saturday and Sunday mornings Dec 5 to 6, 12 to 13, 19 to 20 and 26 to 27, while supplies last",
+   "venue": "Gunstock Mountain Resort, 719 Cherry Valley Rd",
+   "venue_url": "https://www.gunstock.com/",
+   "town": "Gilford",
+   "category": "winter",
+   "tier": 1,
+   "summary": "Skiers and riders get complimentary apple cider donuts from Beans & Greens Farm in Gilford on weekend mornings.",
+   "url": "https://www.gunstock.com/discover/?p=1&v=list&id=858",
+   "source_url": "https://www.gunstock.com/discover/events-calendar/",
+   "status": "confirmed",
+   "verified_on": "2026-11-25",
+   "organizer": "Gunstock Mountain Resort"
   }
  ],
  "annual": [
