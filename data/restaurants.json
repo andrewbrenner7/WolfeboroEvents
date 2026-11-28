@@ -1,0 +1,3225 @@
+{
+ "description": "Wolfeboro NH restaurant directory for wolfeboroevents.com. Weekly hours recheck: edit this file only, update hours_checked, hours_confidence and last_checked.",
+ "last_checked": "2026-11-28",
+ "next_review": "2026-12-03",
+ "timezone": "America/New_York",
+ "hours_format": "hours.<day> is a list of [open, close] 24-hour pairs in local time. [] means closed that day. null means not confirmed (show 'Hours not confirmed, call ahead').",
+ "status_values": [
+  "open",
+  "closed_for_season",
+  "temporarily_closed",
+  "preorder_only"
+ ],
+ "categories": [
+  {
+   "id": "pizza",
+   "label": "Pizza"
+  },
+  {
+   "id": "american-pub",
+   "label": "American & Pub"
+  },
+  {
+   "id": "seafood",
+   "label": "Seafood"
+  },
+  {
+   "id": "breakfast",
+   "label": "Breakfast & Brunch"
+  },
+  {
+   "id": "cafe",
+   "label": "Cafe & Coffee"
+  },
+  {
+   "id": "bakery",
+   "label": "Bakery"
+  },
+  {
+   "id": "sweets",
+   "label": "Ice Cream & Sweets"
+  },
+  {
+   "id": "asian",
+   "label": "Asian"
+  },
+  {
+   "id": "mexican-latin",
+   "label": "Mexican & Latin"
+  },
+  {
+   "id": "deli",
+   "label": "Deli & Takeout"
+  },
+  {
+   "id": "fine-dining",
+   "label": "Fine Dining"
+  }
+ ],
+ "restaurants": [
+  {
+   "id": "wolfes-tavern",
+   "name": "Wolfe's Tavern at the Wolfeboro Inn",
+   "categories": [
+    "american-pub",
+    "breakfast"
+   ],
+   "phone": "603-569-3016",
+   "website": "https://www.wolfeboroinn.com/wolfes-tavern",
+   "tags": [
+    "historic",
+    "bar",
+    "reservations"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "07:30",
+      "10:00"
+     ]
+    ],
+    "tue": [],
+    "wed": [
+     [
+      "10:30",
+      "21:00"
+     ]
+    ],
+    "thu": [
+     [
+      "07:30",
+      "10:00"
+     ],
+     [
+      "10:30",
+      "21:00"
+     ]
+    ],
+    "fri": [
+     [
+      "07:30",
+      "10:00"
+     ],
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "sat": [
+     [
+      "07:30",
+      "10:00"
+     ],
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "sun": [
+     [
+      "07:30",
+      "10:00"
+     ],
+     [
+      "10:30",
+      "19:00"
+     ]
+    ]
+   },
+   "hours_text": "Breakfast 7:30 to 10 a.m. Thu to Mon. Lunch and dinner Wed to Sun from 10:30 a.m. Closed Tuesday.",
+   "hours_note": "Kitchen closes an hour before the bar (Wed and Thu kitchen until 8, bar until 9; Fri and Sat kitchen until 9, bar until 10). Sunday closes at 7.",
+   "hours_confidence": "high",
+   "confidence_note": "Official page and Google agree. The Chamber listing still has an April 2025 note about a renovation; ignore it.",
+   "check_urls": [
+    "https://www.wolfeboroinn.com/wolfes-tavern"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Wolfe%27s+Tavern+at+the+Wolfeboro+Inn+90+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "90 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.wolfeboroinn.com/wolfes-tavern"
+   }
+  },
+  {
+   "id": "samuel-averys-tavern",
+   "name": "Samuel Avery's Tavern",
+   "categories": [
+    "fine-dining"
+   ],
+   "phone": "603-619-8272",
+   "website": "https://www.pickeringhousewolfeboro.com/samuel-averys-tavern",
+   "tags": [
+    "reservations"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [
+     [
+      "17:00",
+      "21:00"
+     ]
+    ],
+    "thu": [
+     [
+      "17:00",
+      "21:00"
+     ]
+    ],
+    "fri": [
+     [
+      "17:00",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "17:00",
+      "21:00"
+     ]
+    ],
+    "sun": [
+     [
+      "17:00",
+      "21:00"
+     ]
+    ]
+   },
+   "hours_text": "Dinner Wed to Sun, 5 to 9 p.m. (last seating 8:30).",
+   "hours_confidence": "high",
+   "confidence_note": "Opened spring 2026 in the space that was Pavilion. Some directories still list Pavilion with the old phone number.",
+   "check_urls": [
+    "https://www.pickeringhousewolfeboro.com/samuel-averys-tavern"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Samuel+Avery%27s+Tavern+126+South+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "126 South Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.pickeringhousewolfeboro.com/samuel-averys-tavern"
+   }
+  },
+  {
+   "id": "o-bistro",
+   "name": "O Bistro at the Inn on Main",
+   "categories": [
+    "fine-dining"
+   ],
+   "phone": "603-515-1003",
+   "website": "https://obistronh.com/",
+   "tags": [
+    "reservations"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "thu": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "fri": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Dinner Wed to Sat, 4 to 9 p.m. Closed Sun to Tue.",
+   "hours_confidence": "high",
+   "confidence_note": "Official site shows Wed to Sat. The Chamber listing says Tue to Sat; the official site wins.",
+   "check_urls": [
+    "https://obistronh.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=O+Bistro+at+the+Inn+on+Main+200+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "200 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://obistronh.com/"
+   }
+  },
+  {
+   "id": "trenta",
+   "name": "Trenta",
+   "categories": [
+    "fine-dining"
+   ],
+   "phone": "603-515-1068",
+   "website": "https://www.trentanh.com/",
+   "tags": [
+    "reservations",
+    "farm-to-table"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "wed": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "thu": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "fri": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "16:00",
+      "21:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Dinner Tue to Sat, 4 to 9 p.m. Closed Sun and Mon.",
+   "hours_confidence": "medium",
+   "confidence_note": "Official site and the Google listing agree, but neither says which season the hours are for. Confirm with a winter menu or post when possible.",
+   "check_urls": [
+    "https://www.trentanh.com/",
+    "https://www.trentanh.com/contact/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Trenta+30+Middleton+Rd+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "Loads; the host sometimes returns a 502 or robot check to automated tools.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "30 Middleton Rd",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.trentanh.com/"
+   }
+  },
+  {
+   "id": "nolans",
+   "name": "Nolan's Brick Oven Bistro & Pub",
+   "categories": [
+    "pizza",
+    "american-pub"
+   ],
+   "phone": "603-515-1028",
+   "website": "https://www.nolansbistro.com/",
+   "tags": [
+    "wood-fired",
+    "takeout",
+    "kid-friendly"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 11:30 a.m. to 9 p.m., year round.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.nolansbistro.com/location/nolans-bistro/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Nolan%27s+Brick+Oven+Bistro+%26+Pub+39+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "39 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.nolansbistro.com/location/nolans-bistro/"
+   }
+  },
+  {
+   "id": "garwoods",
+   "name": "Garwoods Restaurant & Pub",
+   "categories": [
+    "american-pub",
+    "seafood"
+   ],
+   "phone": "603-569-7788",
+   "website": "https://garwoodsrestaurant.com/",
+   "tags": [
+    "waterfront",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 11 a.m. to 8 p.m.",
+   "hours_confidence": "medium",
+   "confidence_note": "Hours come from Google-based listings only. The restaurant's own site did not load properly from our server (it showed a parked-domain page), so confirm the site and hours by phone or Facebook.",
+   "facebook": "https://www.facebook.com/103125269776578",
+   "check_urls": [
+    "https://garwoodsrestaurant.com/contact-us/",
+    "https://www.facebook.com/103125269776578"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Garwoods+Restaurant+%26+Pub+6+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "unverified",
+    "note": "garwoodsrestaurant.com shows a GoDaddy parked-domain page from our server, but search engines index real pages (contact-us, menu). Recheck by hand; Facebook is the fallback.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "6 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "Google / Restaurantji (updated Nov 14, 2026)",
+    "url": "https://www.restaurantji.com/nh/wolfeboro/garwoods-restaurant-/"
+   }
+  },
+  {
+   "id": "wolfetrap",
+   "name": "Wolfetrap Grill & Rawbar",
+   "categories": [
+    "seafood"
+   ],
+   "phone": "603-569-1047",
+   "website": "https://wolfetrap.com/",
+   "tags": [
+    "waterfront",
+    "raw bar"
+   ],
+   "status": "closed_for_season",
+   "seasonal": true,
+   "season_note": "The grill is closed for the season. Usually reopens in spring.",
+   "reopens": "Spring 2027",
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [],
+    "thu": [],
+    "fri": [],
+    "sat": [],
+    "sun": []
+   },
+   "hours_text": "Grill closed for the season. The Wolfetrap Fish Market (in front of the grill) is open Tue to Sat, 11 a.m. to 6 p.m.",
+   "hours_note": "Fish Market only: Tue to Sat 11 a.m. to 6 p.m. Not a restaurant, so not counted for Open now.",
+   "hours_confidence": "high",
+   "confidence_note": "Official site says closed for the season. Google still shows Tue to Sat 11 to 8, which is out of date.",
+   "check_urls": [
+    "https://wolfetrap.com/hours-and-location"
+   ],
+   "chain": false,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Wolfetrap+Grill+%26+Rawbar+19+Bay+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "Loads in a browser-like fetch; the host shows a robot check to some tools.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "19 Bay St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://wolfetrap.com/hours-and-location"
+   }
+  },
+  {
+   "id": "marker-21",
+   "name": "Marker 21",
+   "categories": [
+    "american-pub"
+   ],
+   "phone": "603-569-8668",
+   "website": "https://www.marker21nh.com/",
+   "tags": [
+    "waterfront",
+    "bar",
+    "live music"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ]
+   },
+   "hours_text": "Kitchen 11:30 a.m. to 8 p.m. Tue to Sun. Closed Monday.",
+   "hours_note": "Bar stays open until 9 p.m. Tue to Sun. Hours change for holidays and private events.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.marker21nh.com/info"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Marker+21+33+Dockside+St+%282nd+and+3rd+floors%29+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "33 Dockside St (2nd and 3rd floors)",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.marker21nh.com/info"
+   }
+  },
+  {
+   "id": "wicked-loon",
+   "name": "The Wicked Loon",
+   "categories": [
+    "seafood",
+    "american-pub"
+   ],
+   "phone": "603-515-1005",
+   "website": "https://thewickedloon.com/",
+   "tags": [
+    "waterfront",
+    "bar",
+    "reservations"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily. 11 a.m. to 8 p.m., until 9 p.m. Fri and Sat.",
+   "hours_confidence": "medium",
+   "confidence_note": "The site's hours widget shows only today (Saturday 11 to 9, matching Google). Other days come from Google and match the site's weekday reading earlier (11 to 8). Google lists the address as 33 Dockside; the official site says 27 South Main. LocalTopia, listed at 27 South Main, appears to be the same place.",
+   "check_urls": [
+    "https://thewickedloon.com/visit-us"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Wicked+Loon+27+South+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "27 South Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site (today only) + Google",
+    "url": "https://thewickedloon.com/visit-us"
+   }
+  },
+  {
+   "id": "downtown-grill",
+   "name": "Downtown Grill",
+   "categories": [
+    "american-pub",
+    "breakfast"
+   ],
+   "phone": "603-569-4504",
+   "website": "https://dtgnh.com/",
+   "tags": [
+    "bar",
+    "live music",
+    "breakfast"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "tue": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "08:00",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "08:00",
+      "21:00"
+     ]
+    ],
+    "sun": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily. 8 a.m. to 8 p.m., until 9 p.m. Fri and Sat.",
+   "hours_confidence": "medium",
+   "confidence_note": "The site's hours widget shows only today (Saturday 8 to 9, matching Google, and 8 to 8 on a weekday earlier). The full week comes from Google.",
+   "check_urls": [
+    "https://dtgnh.com/visit-us"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Downtown+Grill+33+South+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "33 South Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site (today only) + Google",
+    "url": "https://dtgnh.com/visit-us"
+   }
+  },
+  {
+   "id": "back-bay-boathouse",
+   "name": "Back Bay Boathouse",
+   "categories": [
+    "american-pub"
+   ],
+   "phone": "603-515-1002",
+   "website": "https://backbayboathouse.com/",
+   "tags": [
+    "waterfront",
+    "kid-friendly",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:00",
+      "21:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 11 a.m. to 9 p.m.",
+   "hours_confidence": "high",
+   "confidence_note": "Site says open 7 days a week and shows 11 to 9 today; Google agrees. An older Google/Explore Wolfeboro listing called Bayside Grill & Tavern is the same address and phone (old name, stale hours).",
+   "check_urls": [
+    "https://backbayboathouse.com/contact-us"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Back+Bay+Boathouse+51+Mill+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "51 Mill St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://backbayboathouse.com/contact-us"
+   }
+  },
+  {
+   "id": "el-centenario",
+   "name": "El Centenario",
+   "categories": [
+    "mexican-latin"
+   ],
+   "phone": "603-569-3445",
+   "website": "https://www.elcentenarionh.com/",
+   "tags": [
+    "takeout",
+    "patio"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 11 a.m. to 10 p.m.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.elcentenarionh.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Centenario+14+Union+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "14 Union St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.elcentenarionh.com/"
+   }
+  },
+  {
+   "id": "la-boca",
+   "name": "La Boca Restaurant & Market",
+   "categories": [
+    "mexican-latin",
+    "deli"
+   ],
+   "phone": "603-569-5595",
+   "website": "https://labocallc.com/",
+   "tags": [
+    "takeout",
+    "local ingredients"
+   ],
+   "status": "preorder_only",
+   "season_note": "Off-season weekly pre-order model, not walk-in dining.",
+   "hours": {
+    "mon": null,
+    "tue": null,
+    "wed": null,
+    "thu": null,
+    "fri": null,
+    "sat": null,
+    "sun": null
+   },
+   "hours_text": "No regular walk-in hours. Weekly pre-order meal share: order by Wednesday noon, pick up Saturday. The site posts each order window (next: Nov 29 to Dec 2).",
+   "hours_note": "Order by phone 603-569-5595 or email info@labocallc.com.",
+   "hours_confidence": "medium",
+   "confidence_note": "The site's hours widget still shows 10 a.m. to 4 p.m. daily, but the home page says the restaurant is in a change of model with weekly order windows. Treat as pre-order only.",
+   "check_urls": [
+    "https://labocallc.com/"
+   ],
+   "seasonal": false,
+   "reopens": null,
+   "chain": false,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Boca+Restaurant+%26+Market+50+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "50 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://labocallc.com/"
+   }
+  },
+  {
+   "id": "burnt-timber",
+   "name": "Burnt Timber Brewing & Tavern",
+   "categories": [
+    "american-pub"
+   ],
+   "phone": "603-515-1079",
+   "website": "https://www.burnttimbertavern.com/",
+   "tags": [
+    "brewery",
+    "BBQ",
+    "kid-friendly",
+    "dog-friendly patio"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [
+     [
+      "16:00",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "16:00",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "sat": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "sun": [
+     [
+      "12:00",
+      "17:00"
+     ]
+    ]
+   },
+   "hours_text": "Wed and Thu 4 to 8 p.m., Fri and Sat noon to 8, Sun noon to 5. Closed Mon and Tue.",
+   "hours_confidence": "high",
+   "confidence_note": "Official site and Google agree.",
+   "check_urls": [
+    "https://www.burnttimbertavern.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Burnt+Timber+Brewing+%26+Tavern+96+Lehner+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "96 Lehner St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.burnttimbertavern.com/"
+   }
+  },
+  {
+   "id": "morrisseys-porch",
+   "name": "Morrisseys' Porch & Irish Pub",
+   "categories": [
+    "seafood",
+    "american-pub",
+    "sweets"
+   ],
+   "phone": "603-569-3662",
+   "website": "https://morrisseysfrontporch.com/",
+   "tags": [
+    "ice cream",
+    "takeout",
+    "kid-friendly"
+   ],
+   "status": "temporarily_closed",
+   "reopens": "2026-12-03",
+   "season_note": "Closed for the annual holiday break, Nov 26 to Dec 2.",
+   "hours": {
+    "mon": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ]
+   },
+   "hours_text": "Open year round, 11:30 a.m. to 8 p.m., until 9 p.m. Fri and Sat. Closed for a holiday break Nov 26 to Dec 2.",
+   "hours_confidence": "high",
+   "confidence_note": "Official hours page lists the holiday closure. After Dec 2 the regular hours apply; remove the temporary status then.",
+   "check_urls": [
+    "https://morrisseysfrontporch.com/hours.html"
+   ],
+   "seasonal": false,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Morrisseys%27+Porch+%26+Irish+Pub+286+South+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "286 South Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://morrisseysfrontporch.com/hours.html"
+   }
+  },
+  {
+   "id": "sand-trap",
+   "name": "The Sand Trap at Kingswood Golf Club",
+   "categories": [
+    "american-pub"
+   ],
+   "phone": "603-569-9869",
+   "website": "https://kingswoodgolfclub.com/",
+   "tags": [
+    "golf club"
+   ],
+   "status": "closed_for_season",
+   "seasonal": true,
+   "season_note": "Closed for the season with the golf course.",
+   "reopens": "Spring 2027",
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [],
+    "thu": [],
+    "fri": [],
+    "sat": [],
+    "sun": []
+   },
+   "hours_text": "Closed for the season. The club office is open all winter at 603-569-3524.",
+   "hours_confidence": "high",
+   "confidence_note": "Official club site says the course and restaurant are closed for the season. The Chamber listing links to thesandtrap.com, which is an unrelated golf forum; do not use that link.",
+   "check_urls": [
+    "https://kingswoodgolfclub.com/"
+   ],
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Sand+Trap+at+Kingswood+Golf+Club+24+Kingswood+Rd+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "24 Kingswood Rd",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://kingswoodgolfclub.com/"
+   }
+  },
+  {
+   "id": "bay-diner",
+   "name": "The Bay Diner",
+   "categories": [
+    "breakfast"
+   ],
+   "phone": "603-515-1006",
+   "website": "https://www.facebook.com/TheBayDiner22",
+   "website_type": "facebook",
+   "tags": [
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "05:00",
+      "14:00"
+     ]
+    ],
+    "tue": [
+     [
+      "05:00",
+      "14:00"
+     ]
+    ],
+    "wed": [
+     [
+      "05:00",
+      "14:00"
+     ]
+    ],
+    "thu": [
+     [
+      "05:00",
+      "14:00"
+     ]
+    ],
+    "fri": [
+     [
+      "05:00",
+      "14:00"
+     ]
+    ],
+    "sat": [
+     [
+      "05:00",
+      "14:00"
+     ]
+    ],
+    "sun": [
+     [
+      "05:00",
+      "12:00"
+     ]
+    ]
+   },
+   "hours_text": "Mon to Sat 5 a.m. to 2 p.m., Sun 5 a.m. to noon.",
+   "hours_confidence": "medium",
+   "confidence_note": "Facebook page needs a login to read the hours (it does show Open now). Google hours not cross-checked with the restaurant. No separate website found.",
+   "check_urls": [
+    "https://www.facebook.com/TheBayDiner22"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Bay+Diner+5+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "login_wall",
+    "note": "Facebook page loads; hours need a login.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "5 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror)",
+    "url": "https://exa.ai/library/places?ids=h243l4bt4m6%2C30gyq7bvr75%2Cp3nvkgzm872%2C90ycvh6y2sj%2C5xt01lldg1p%2Cqpzx8pbwqlk%2C0t0q59yrdg1%2Cyjvpgsj6xfz%2Cbhp6jx098br%2Cv7f8d4hr57n"
+   }
+  },
+  {
+   "id": "katies-kitchen",
+   "name": "Katie's Kitchen",
+   "categories": [
+    "breakfast"
+   ],
+   "phone": "603-569-1406",
+   "website": "https://www.facebook.com/102764181503600",
+   "website_type": "facebook",
+   "tags": [
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ],
+    "tue": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ],
+    "wed": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ],
+    "thu": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ],
+    "fri": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ],
+    "sat": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ],
+    "sun": [
+     [
+      "06:00",
+      "12:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 6 a.m. to noon.",
+   "hours_confidence": "medium",
+   "confidence_note": "Google only. The katieskitchenwolfeboro.com site is an unfinished 'Launching soon' placeholder, so we link Facebook instead. Phone is from the Chamber and Explore Wolfeboro (Google has none).",
+   "check_urls": [
+    "https://www.facebook.com/102764181503600"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Katie%27s+Kitchen+35+Center+St+%28Clark%27s+Plaza%29+Wolfeboro+NH",
+   "website_check": {
+    "status": "login_wall",
+    "note": "Facebook page loads behind a login prompt.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "35 Center St (Clark's Plaza)",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror)",
+    "url": "https://exa.ai/library/place/0t0q59yrdg1"
+   }
+  },
+  {
+   "id": "lydias-cafe",
+   "name": "Lydia's Cafe",
+   "categories": [
+    "breakfast",
+    "cafe"
+   ],
+   "phone": "603-569-3991",
+   "website": "https://www.facebook.com/Lydias-Cafe-of-Wolfeboro-358070004312069/",
+   "website_type": "facebook",
+   "tags": [
+    "takeout",
+    "dogs allowed"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "tue": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "wed": [],
+    "thu": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "fri": [
+     [
+      "08:00",
+      "14:00"
+     ]
+    ],
+    "sat": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Mon, Tue, Thu, Sat 7 a.m. to 2 p.m., Fri 8 a.m. to 2 p.m. Closed Wed and Sun.",
+   "hours_confidence": "medium",
+   "confidence_note": "Google only. Facebook needs a login to read. No separate website found.",
+   "check_urls": [
+    "https://www.facebook.com/Lydias-Cafe-of-Wolfeboro-358070004312069/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Lydia%27s+Cafe+33+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "login_wall",
+    "note": "Facebook page loads behind a login prompt.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "33 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror)",
+    "url": "https://exa.ai/library/place/30gyq7bvr75"
+   }
+  },
+  {
+   "id": "north-main-cafe",
+   "name": "North Main Café",
+   "categories": [
+    "cafe",
+    "breakfast"
+   ],
+   "phone": "603-515-1033",
+   "website": "https://www.northmaincafe.com/",
+   "tags": [
+    "takeout",
+    "outdoor seating"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": null,
+    "wed": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "thu": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "fri": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "sat": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "sun": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ]
+   },
+   "hours_text": "Wed to Fri 7 a.m. to 3 p.m., Sat and Sun 7 a.m. to 2 p.m. Closed Monday. Tuesday: call ahead.",
+   "hours_note": "Kitchen closes 30 minutes before closing (2:30 weekdays, 1:30 weekends). May close for snow; check their social media.",
+   "hours_confidence": "low",
+   "sources_disagree": true,
+   "confidence_note": "Official page is headed 'Spring 2026 Hours' (closed Mon and Tue). Google says open Tuesday 7 to 3. Tuesday is left unconfirmed. Ask the cafe which is current.",
+   "check_urls": [
+    "https://www.northmaincafe.com/hours"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=North+Main+Caf%C3%A9+15+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "15 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site (labeled Spring 2026) + Google",
+    "url": "https://www.northmaincafe.com/hours"
+   }
+  },
+  {
+   "id": "seven-suns",
+   "name": "Seven Suns Cafe",
+   "categories": [
+    "cafe",
+    "breakfast"
+   ],
+   "phone": "603-515-1010",
+   "website": "https://sevensunscafe.com/",
+   "tags": [
+    "crepes",
+    "takeout"
+   ],
+   "seasonal": true,
+   "season_note": "Winter hours in effect (Tue to Sat only). Summer hours add Monday and Sunday.",
+   "hours": {
+    "mon": [],
+    "tue": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "wed": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "thu": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "fri": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "sat": [
+     [
+      "07:00",
+      "14:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Winter hours: Tue to Sat, 7 a.m. to 2 p.m. Closed Sun and Mon.",
+   "hours_confidence": "high",
+   "sources_disagree": true,
+   "confidence_note": "Official site lists summer and winter hours; winter applies now. Google still shows the summer schedule (Mon to Sat, plus Sunday 8 to 1). Official wins. When winter hours end is not stated.",
+   "check_urls": [
+    "https://sevensunscafe.com/"
+   ],
+   "status": "open",
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Seven+Suns+Cafe+21+Railroad+Ave+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "21 Railroad Ave",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://sevensunscafe.com/"
+   }
+  },
+  {
+   "id": "harmony-coffee",
+   "name": "Harmony Coffee House",
+   "categories": [
+    "cafe"
+   ],
+   "phone": "603-569-4646",
+   "website": "https://www.harmonycoffeehousenh.com/",
+   "tags": [
+    "fireplace",
+    "light bites"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "06:00",
+      "16:00"
+     ]
+    ],
+    "tue": [
+     [
+      "06:00",
+      "16:00"
+     ]
+    ],
+    "wed": [
+     [
+      "06:00",
+      "16:00"
+     ]
+    ],
+    "thu": [
+     [
+      "06:00",
+      "16:00"
+     ]
+    ],
+    "fri": [
+     [
+      "06:00",
+      "16:00"
+     ]
+    ],
+    "sat": [
+     [
+      "06:00",
+      "16:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Mon to Sat 6 a.m. to 4 p.m. Closed Sunday.",
+   "hours_confidence": "high",
+   "confidence_note": "Official site and Google agree. The Chamber listing (Fri and Sat until 8 p.m.) is out of date.",
+   "check_urls": [
+    "https://www.harmonycoffeehousenh.com/contact-us"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Harmony+Coffee+House+21+Central+Ave+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "21 Central Ave",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.harmonycoffeehousenh.com/contact-us"
+   }
+  },
+  {
+   "id": "lucas-roasting",
+   "name": "Lucas Roasting Company",
+   "categories": [
+    "cafe",
+    "bakery"
+   ],
+   "phone": "603-605-5484",
+   "website": "https://www.lucasroasting.com/",
+   "tags": [
+    "coffee roaster",
+    "cinnamon rolls"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "thu": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "fri": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "sat": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Wed to Sat 7 a.m. to 3 p.m. Closed Sun to Tue.",
+   "hours_confidence": "high",
+   "confidence_note": "Official site header and Google agree. The site sometimes shows a 'checking your browser' page to automated tools; hours were read through a search fetch.",
+   "check_urls": [
+    "https://www.lucasroasting.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Lucas+Roasting+Company+7+King+St+%28lower+level%29+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "Loads; the host sometimes shows a browser check to automated tools.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "7 King St (lower level)",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.lucasroasting.com/"
+   }
+  },
+  {
+   "id": "bayberry",
+   "name": "Bayberry Juice Bar",
+   "categories": [
+    "cafe",
+    "deli"
+   ],
+   "phone": "603-569-9956",
+   "website": "https://bayberryjuicebar.com/",
+   "tags": [
+    "vegetarian",
+    "vegan options",
+    "gluten-free options",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "tue": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "wed": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "thu": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "fri": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "sat": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "sun": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ]
+   },
+   "hours_text": "Open every day, 7 a.m. to 3 p.m.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://bayberryjuicebar.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Bayberry+Juice+Bar+19+South+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "19 South Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://bayberryjuicebar.com/"
+   }
+  },
+  {
+   "id": "yum-yum-shop",
+   "name": "Yum Yum Shop",
+   "categories": [
+    "bakery",
+    "sweets",
+    "cafe"
+   ],
+   "phone": "603-569-1919",
+   "website": "https://www.yumyumshop.com/",
+   "tags": [
+    "ice cream",
+    "since 1948",
+    "takeout"
+   ],
+   "hours": {
+    "mon": null,
+    "tue": null,
+    "wed": null,
+    "thu": null,
+    "fri": null,
+    "sat": null,
+    "sun": null
+   },
+   "hours_text": "Open every day year round, from 7 a.m. Closing time changes with the season, so call ahead for today's close.",
+   "hours_confidence": "low",
+   "sources_disagree": true,
+   "confidence_note": "Official site says they open at 7 a.m. daily and close at varying times, and points to Google and Facebook for current hours. Google shows 8:30 a.m. to 4:30 p.m. The opening times disagree, so no exact hours are shown.",
+   "hours_note": "Google lists 8:30 a.m. to 4:30 p.m. daily; their site says they open at 7.",
+   "check_urls": [
+    "https://www.yumyumshop.com/pages/contact",
+    "https://www.facebook.com/191208414596"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Yum+Yum+Shop+16+North+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "16 North Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.yumyumshop.com/pages/contact"
+   }
+  },
+  {
+   "id": "baked-by-the-lake",
+   "name": "Baked by the Lake Bread Company",
+   "categories": [
+    "bakery"
+   ],
+   "phone": "603-515-1008",
+   "website": null,
+   "website_type": "none",
+   "tags": [
+    "sourdough",
+    "pastries"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "08:00",
+      "15:00"
+     ]
+    ],
+    "tue": [
+     [
+      "08:00",
+      "15:00"
+     ]
+    ],
+    "wed": [
+     [
+      "08:00",
+      "15:00"
+     ]
+    ],
+    "thu": [
+     [
+      "08:00",
+      "15:00"
+     ]
+    ],
+    "fri": [
+     [
+      "08:00",
+      "15:00"
+     ]
+    ],
+    "sat": [
+     [
+      "08:00",
+      "15:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Mon to Sat 8 a.m. to 3 p.m. Closed Sunday.",
+   "hours_confidence": "medium",
+   "confidence_note": "Google only, from a small number of reviews. No official website or Facebook page found. The only web listing is on visitwolfeboro.com, which carries no hours.",
+   "check_urls": [],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Baked+by+the+Lake+Bread+Company+83+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "none",
+    "note": "No official website or Facebook page found."
+   },
+   "address": {
+    "street": "83 Center St",
+    "city": "Wolfeboro Falls",
+    "state": "NH",
+    "zip": "03896"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror)",
+    "url": "https://exa.ai/library/place/yjvpgsj6xfz"
+   }
+  },
+  {
+   "id": "from-scratch-baking",
+   "name": "From Scratch Baking Co.",
+   "categories": [
+    "bakery"
+   ],
+   "phone": "603-515-1049",
+   "website": "https://www.fromscratchbakingcompany.com/",
+   "tags": [
+    "cakes",
+    "gluten-free options",
+    "takeout only"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [
+     [
+      "08:00",
+      "13:00"
+     ]
+    ],
+    "thu": [
+     [
+      "08:00",
+      "13:00"
+     ]
+    ],
+    "fri": [
+     [
+      "08:00",
+      "13:00"
+     ]
+    ],
+    "sat": [
+     [
+      "08:00",
+      "12:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Wed to Fri 8 a.m. to 1 p.m., Sat 8 a.m. to noon. Closed Sun to Tue.",
+   "hours_note": "No seating and no coffee. Same-day orders are not accepted; small orders placed by noon can be ready the next day. Holiday pre-orders open soon.",
+   "hours_confidence": "high",
+   "sources_disagree": true,
+   "confidence_note": "Official site says Wed to Fri and Sat. Google shows only Fri and Sat, which is out of date.",
+   "check_urls": [
+    "https://www.fromscratchbakingcompany.com/about"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=From+Scratch+Baking+Co.+36+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "36 Center St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.fromscratchbakingcompany.com/about"
+   }
+  },
+  {
+   "id": "baileys-bubble",
+   "name": "Bailey's Bubble",
+   "categories": [
+    "sweets"
+   ],
+   "phone": "603-569-3612",
+   "website": "https://baileysbubble.com/",
+   "tags": [
+    "ice cream",
+    "homemade sauces"
+   ],
+   "status": "closed_for_season",
+   "seasonal": true,
+   "season_note": "Closed for the season. Reopens May 2027.",
+   "reopens": "May 2027",
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [],
+    "thu": [],
+    "fri": [],
+    "sat": [],
+    "sun": []
+   },
+   "hours_text": "Closed for the season. See you in May 2027.",
+   "hours_confidence": "high",
+   "sources_disagree": true,
+   "confidence_note": "Official site says closed for the season. Google still shows noon to 8 p.m. daily, which is out of date.",
+   "check_urls": [
+    "https://baileysbubble.com/"
+   ],
+   "chain": false,
+   "hours_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Bailey%27s+Bubble+5+Railroad+Ave+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "Loads in a browser-like fetch; the host shows a robot check to some tools.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "5 Railroad Ave",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://baileysbubble.com/"
+   }
+  },
+  {
+   "id": "dockside-grille",
+   "name": "Wolfeboro Dockside Grille & Dairy Bar",
+   "categories": [
+    "american-pub",
+    "seafood",
+    "sweets"
+   ],
+   "phone": "603-569-3456",
+   "website": "https://wolfeborodockside.com/",
+   "tags": [
+    "waterfront",
+    "ice cream",
+    "kid-friendly"
+   ],
+   "status": "closed_for_season",
+   "seasonal": true,
+   "season_note": "Summer-only spot. Open 7 days in summer.",
+   "reopens": "Summer 2027 (date not posted)",
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [],
+    "thu": [],
+    "fri": [],
+    "sat": [],
+    "sun": []
+   },
+   "hours_text": "Closed for the season. Open 7 days in summer.",
+   "hours_confidence": "medium",
+   "confidence_note": "Site says 'Open in the Summer 7 Days' (the page itself looks unchanged since 2017), and Google lists it as closed. Opening date is not posted.",
+   "check_urls": [
+    "https://wolfeborodockside.com/"
+   ],
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Wolfeboro+Dockside+Grille+%26+Dairy+Bar+11+Dockside+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "11 Dockside St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://wolfeborodockside.com/"
+   }
+  },
+  {
+   "id": "seacoast-pretzel",
+   "name": "Seacoast Pretzel Company (Wolfeboro shop)",
+   "categories": [
+    "bakery"
+   ],
+   "phone": "603-684-2417",
+   "website": "https://www.seacoastpretzelcompany.com/wolfeboro-shop",
+   "tags": [
+    "pretzels",
+    "walk-up window"
+   ],
+   "status": "closed_for_season",
+   "seasonal": true,
+   "season_note": "Closed for the season. May open on select dates and at events.",
+   "reopens": "Summer 2027 (date not posted)",
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [],
+    "thu": [],
+    "fri": [],
+    "sat": [],
+    "sun": []
+   },
+   "hours_text": "Closed for the season. Opens on select dates and events; follow their socials.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.seacoastpretzelcompany.com/wolfeboro-shop"
+   ],
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Seacoast+Pretzel+Company+%28Wolfeboro+shop%29+6+Central+Ave+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "6 Central Ave",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.seacoastpretzelcompany.com/wolfeboro-shop"
+   }
+  },
+  {
+   "id": "dunkin",
+   "name": "Dunkin'",
+   "categories": [
+    "cafe",
+    "breakfast"
+   ],
+   "phone": "603-569-9050",
+   "website": "https://www.dunkindonuts.com/locations/us/nh/wolfeboro/23-center-st/store-307849/",
+   "tags": [
+    "drive-thru",
+    "chain"
+   ],
+   "chain": true,
+   "hours": {
+    "mon": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ],
+    "tue": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ],
+    "wed": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ],
+    "thu": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ],
+    "fri": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ],
+    "sat": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ],
+    "sun": [
+     [
+      "04:00",
+      "19:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 4 a.m. to 7 p.m. Drive-thru.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.dunkindonuts.com/locations/us/nh/wolfeboro/23-center-st/store-307849/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Dunkin%27+23+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "23 Center St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.dunkindonuts.com/locations/us/nh/wolfeboro/23-center-st/store-307849/"
+   }
+  },
+  {
+   "id": "full-belli-deli",
+   "name": "The Full Belli Deli",
+   "categories": [
+    "deli"
+   ],
+   "phone": "603-569-1955",
+   "website": "https://www.thefullbellideli.com/",
+   "tags": [
+    "sandwiches",
+    "catering",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "10:30",
+      "15:00"
+     ]
+    ],
+    "tue": [
+     [
+      "10:30",
+      "15:00"
+     ]
+    ],
+    "wed": [
+     [
+      "10:30",
+      "15:00"
+     ]
+    ],
+    "thu": [
+     [
+      "10:30",
+      "15:00"
+     ]
+    ],
+    "fri": [
+     [
+      "10:30",
+      "15:00"
+     ]
+    ],
+    "sat": [
+     [
+      "10:30",
+      "15:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Mon to Sat 10:30 a.m. to 3 p.m. Closed Sunday.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.thefullbellideli.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Full+Belli+Deli+15+Mill+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "15 Mill St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.thefullbellideli.com/"
+   }
+  },
+  {
+   "id": "hucks-hoagies",
+   "name": "Huck's Hoagies",
+   "categories": [
+    "deli"
+   ],
+   "phone": "603-569-6122",
+   "website": "https://huckshoagies.kwickmenu.com/",
+   "website_type": "ordering",
+   "tags": [
+    "sandwiches",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "tue": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "wed": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "thu": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "fri": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "sat": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Mon to Sat 10 a.m. to 7 p.m. Closed Sunday.",
+   "hours_note": "Their online-ordering page shows 10:15 a.m. to 6:45 p.m., Mon to Sat.",
+   "hours_confidence": "medium",
+   "confidence_note": "Google says 10 to 7; the online-ordering page says 10:15 to 6:45. Close enough to treat as 10 to 7, but confirm. No official site or Facebook found (the ordering page is a third-party menu site). Warning: huckshoagies.com is an unrelated spam domain, never link it.",
+   "check_urls": [
+    "https://huckshoagies.kwickmenu.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Huck%27s+Hoagies+104+Lehner+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "104 Lehner St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "Google + online-ordering page",
+    "url": "https://huckshoagies.kwickmenu.com/"
+   }
+  },
+  {
+   "id": "louis-pizza",
+   "name": "Louis Pizza",
+   "categories": [
+    "pizza"
+   ],
+   "phone": "603-569-5245",
+   "website": "https://www.louis-pizza.com/",
+   "tags": [
+    "Greek-style pizza",
+    "takeout",
+    "since 1989"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "tue": [],
+    "wed": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:00",
+      "20:00"
+     ]
+    ]
+   },
+   "hours_text": "Open 11 a.m. to 8 p.m. Closed Tuesday.",
+   "hours_confidence": "high",
+   "check_urls": [
+    "https://www.louis-pizza.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "confidence_note": null,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Louis+Pizza+36+Center+St+%28Wolfeboro+Shopping+Center%29+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "36 Center St (Wolfeboro Shopping Center)",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.louis-pizza.com/"
+   }
+  },
+  {
+   "id": "anthonys-pizzeria",
+   "name": "Anthony's Old Style Pizzeria",
+   "categories": [
+    "pizza"
+   ],
+   "phone": "603-569-3904",
+   "website": "https://www.anthonysoldstylepizzeria.com/",
+   "tags": [
+    "takeout",
+    "delivery",
+    "online ordering"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [
+     [
+      "16:00",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "sat": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Tue 4 to 8 p.m., Wed to Sat noon to 8 p.m. Closed Sun and Mon.",
+   "hours_confidence": "medium",
+   "confidence_note": "Official site's ordering banner says 'We open at 12:00 PM' today (Saturday), matching Google. The rest of the week is Google only.",
+   "check_urls": [
+    "https://www.anthonysoldstylepizzeria.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Anthony%27s+Old+Style+Pizzeria+35+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "35 Center St",
+    "city": "Wolfeboro Falls",
+    "state": "NH",
+    "zip": "03896"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror); official site agrees for Saturday",
+    "url": "https://www.anthonysoldstylepizzeria.com/"
+   }
+  },
+  {
+   "id": "wolfgangs-pizza",
+   "name": "Wolfgang's Pizza Subs & More",
+   "categories": [
+    "pizza",
+    "deli"
+   ],
+   "phone": "603-515-3456",
+   "website": "https://www.facebook.com/Wolfgangs-Pizza-Subs-More-163069793716673/",
+   "website_type": "facebook",
+   "tags": [
+    "subs",
+    "takeout",
+    "delivery"
+   ],
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [
+     [
+      "11:00",
+      "19:30"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "19:30"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "19:30"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "19:30"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Wed to Sat 11 a.m. to 7:30 p.m. Closed Sun to Tue.",
+   "hours_confidence": "medium",
+   "confidence_note": "Google and visitwolfeboro.com agree. Facebook needs a login to read. No separate website found.",
+   "check_urls": [
+    "https://www.facebook.com/Wolfgangs-Pizza-Subs-More-163069793716673/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Wolfgang%27s+Pizza+Subs+%26+More+45+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "login_wall",
+    "note": "Facebook page loads behind a login prompt.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "45 Center St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror) + visitwolfeboro.com",
+    "url": "https://visitwolfeboro.com/dining/wolfgangs.html"
+   }
+  },
+  {
+   "id": "sea-bird",
+   "name": "Sea Bird Asian Cuisine",
+   "categories": [
+    "asian"
+   ],
+   "phone": "603-569-9031",
+   "website": "https://www.facebook.com/111558082217874",
+   "website_type": "facebook",
+   "tags": [
+    "Chinese",
+    "takeout",
+    "lunch specials"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:30",
+      "20:00"
+     ]
+    ],
+    "sun": []
+   },
+   "hours_text": "Mon to Sat 11:30 a.m. to 8 p.m. Closed Sunday. Call to confirm.",
+   "hours_confidence": "low",
+   "sources_disagree": true,
+   "confidence_note": "Google says Mon to Sat 11:30 to 8. visitwolfeboro.com says Mon to Thu 11 to 8:30 and Fri and Sat 11 to 9. Neither could be checked at the source: the seabirdasiancuisine.com address Google lists did not load (404 or connection closed), so we link their Facebook page instead.",
+   "check_urls": [
+    "https://www.facebook.com/111558082217874"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Sea+Bird+Asian+Cuisine+89+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "login_wall",
+    "note": "Facebook page. Their own website address from Google did not load.",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "89 Center St",
+    "city": "Wolfeboro Falls",
+    "state": "NH",
+    "zip": "03896"
+   },
+   "hours_source": {
+    "type": "Google (Exa Places mirror)",
+    "url": "https://exa.ai/library/places?ids=92ndkcd7f50%2Ctwnsdqs2nyq%2Crkztyq76qrs%2Cnwczz01q6lb%2C2bcd3mnx1xl%2C00dnfn3v41f%2Cz8b56vhk8t4%2Cyjvpgsj6xfz%2Cq54jzcmhtfj%2Cw4bbgggr5q3"
+   }
+  },
+  {
+   "id": "saka",
+   "name": "Saka Japanese Restaurant",
+   "categories": [
+    "asian"
+   ],
+   "phone": "603-515-1200",
+   "website": "https://www.eaters365.com/sakawolfeboro",
+   "website_type": "ordering",
+   "tags": [
+    "sushi",
+    "hibachi",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "tue": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "wed": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "thu": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "fri": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "sat": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "sun": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ]
+   },
+   "hours_text": "Open daily, 11 a.m. to 10 p.m.",
+   "hours_confidence": "high",
+   "confidence_note": "Their ordering page and Google agree (daily 11 to 10). Their older site, sakawolfeboro.com, would not load from our server, so we link the ordering page. That older site also says 'We Open 6 Days A Week', which contradicts its own hours table.",
+   "check_urls": [
+    "https://www.eaters365.com/sakawolfeboro"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "hours_note": null,
+   "sources_disagree": false,
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Saka+Japanese+Restaurant+495+Center+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "495 Center St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official online-ordering page",
+    "url": "https://www.eaters365.com/sakawolfeboro"
+   }
+  },
+  {
+   "id": "east-of-suez",
+   "name": "East of Suez",
+   "categories": [
+    "asian"
+   ],
+   "phone": "603-534-3928",
+   "website": "https://eastofsuez.com/",
+   "tags": [
+    "pan-Asian",
+    "BYOB",
+    "reservations"
+   ],
+   "status": "closed_for_season",
+   "seasonal": true,
+   "season_note": "Seasonal, roughly Memorial Day to Labor Day, with occasional limited service after.",
+   "reopens": "Late May 2027",
+   "hours": {
+    "mon": [],
+    "tue": [],
+    "wed": [],
+    "thu": [],
+    "fri": [],
+    "sat": [],
+    "sun": []
+   },
+   "hours_text": "Closed for the season. In season: dinner Tue to Sat 4:30 to 9:30 p.m., Sun 4 to 9 p.m. Closed Monday.",
+   "hours_note": "In-season hours only: Tue to Sat 4:30 to 9:30 p.m., Sun 4 to 9 p.m., Mon closed. Lunch and takeout by request.",
+   "hours_confidence": "medium",
+   "confidence_note": "Official site shows the in-season schedule without saying it is closed now. Its own social profile (via RestaurantJump) says summers only, Memorial Day to Labor Day. Google shows 'closed'. Call before assuming any fall or winter service.",
+   "check_urls": [
+    "https://eastofsuez.com/"
+   ],
+   "chain": false,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=East+of+Suez+775+South+Main+St+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "775 South Main St",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site (in-season hours) + Facebook/RestaurantJump seasonal note",
+    "url": "https://eastofsuez.com/"
+   }
+  },
+  {
+   "id": "butternuts",
+   "name": "Butternuts Good Dishes",
+   "categories": [
+    "deli"
+   ],
+   "phone": "603-569-6869",
+   "website": "https://www.butternutsgooddishes.com/",
+   "tags": [
+    "soups",
+    "salads",
+    "quiche",
+    "gourmet shop",
+    "takeout"
+   ],
+   "hours": {
+    "mon": [
+     [
+      "09:00",
+      "16:00"
+     ]
+    ],
+    "tue": [
+     [
+      "09:00",
+      "16:00"
+     ]
+    ],
+    "wed": [
+     [
+      "09:00",
+      "16:00"
+     ]
+    ],
+    "thu": [
+     [
+      "09:00",
+      "16:00"
+     ]
+    ],
+    "fri": [
+     [
+      "09:00",
+      "16:00"
+     ]
+    ],
+    "sat": [
+     [
+      "09:00",
+      "16:00"
+     ]
+    ],
+    "sun": [
+     [
+      "09:00",
+      "15:00"
+     ]
+    ]
+   },
+   "hours_text": "Mon to Sat 9 a.m. to 4 p.m., Sun 9 a.m. to 3 p.m.",
+   "hours_note": "A gourmet shop with homemade soups, salads and quiche to go.",
+   "hours_confidence": "high",
+   "confidence_note": "Official site and Google agree. Counted because it sells prepared food to take away.",
+   "check_urls": [
+    "https://www.butternutsgooddishes.com/"
+   ],
+   "status": "open",
+   "seasonal": false,
+   "season_note": null,
+   "reopens": null,
+   "chain": false,
+   "sources_disagree": false,
+   "website_type": "official",
+   "facebook": null,
+   "hours_checked": "2026-11-28",
+   "maps_url": "https://www.google.com/maps/search/?api=1&query=Butternuts+Good+Dishes+12+Railroad+Ave+Wolfeboro+NH",
+   "website_check": {
+    "status": "ok",
+    "note": "",
+    "date": "2026-11-28"
+   },
+   "address": {
+    "street": "12 Railroad Ave",
+    "city": "Wolfeboro",
+    "state": "NH",
+    "zip": "03894"
+   },
+   "hours_source": {
+    "type": "official site",
+    "url": "https://www.butternutsgooddishes.com/"
+   }
+  }
+ ]
+}
