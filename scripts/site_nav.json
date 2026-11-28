@@ -17,6 +17,10 @@
       "href": "/guide/"
     },
     {
+      "label": "Places to Eat",
+      "href": "/restaurants/"
+    },
+    {
       "label": "Outdoors",
       "href": "/outdoors/"
     },
@@ -29,6 +33,7 @@
     "index.html": "/",
     "guide/index.html": "/guide/",
     "join/index.html": "/join/",
-    "outdoors/index.html": "/outdoors/"
+    "outdoors/index.html": "/outdoors/",
+    "restaurants/index.html": "/restaurants/"
   }
 }
